@@ -1,0 +1,40 @@
+/* -------------- common colors -------------- */
+
+// $black: #333333;
+
+$blue: #2e3f7f;
+$red: #c33362;
+$grey: #9da7af;
+
+/* --------- compass --------- */
+
+@import "compass";
+
+/* --------- normalize --------- */
+
+@import "_misc/normalize";
+
+/* -------- fonts ---------*/
+
+@import "_misc/_fonts";
+
+/* --------- mixins --------- */
+
+@import "_misc/mixins";
+
+/* --------- adjustment --------- */
+
+@import "_misc/adjustment";
+
+/* --------- plugins --------- */
+
+@import "plugins/font-awesome";
+
+
+/* --------- sections --------- */
+
+// @import "_sections/_header";
+
+
+
+
