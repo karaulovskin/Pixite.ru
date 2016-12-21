@@ -2,9 +2,9 @@
 
 // $black: #333333;
 
-$blue: #2e3f7f;
-$red: #c33362;
-$grey: #9da7af;
+$orange: #f38f1f;
+$green: #5c9641;
+$yellow: #fbe80b;
 
 /* --------- compass --------- */
 
@@ -33,7 +33,10 @@ $grey: #9da7af;
 
 /* --------- sections --------- */
 
-// @import "_sections/_header";
+@import "_sections/_header";
+@import "_sections/_events";
+@import "_sections/_cube";
+@import "_sections/_footer";
 
 
 

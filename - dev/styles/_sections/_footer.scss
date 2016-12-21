@@ -1,0 +1,42 @@
+.footer {
+	padding: 20px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.footer--fixed {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: url(../img/bg.jpg) no-repeat;
+    background-color: rgba(22, 37, 44, 0.7);
+    background-size: cover;
+}
+
+.footer__block {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	@extend %clearfix;
+}
+
+.footer-order,
+.footer-calculate {
+	width: 120px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+.copyright {
+	line-height: 34px;
+}
+
+.footer-calculate {
+	float: right;
+}
+
+.footer-order__link,
+.footer-calculate__link {
+	font-size: 10px;
+	color: #fff;
+}

@@ -22,20 +22,12 @@ html
 
         .wrapper
             .maincontent
-                include _common/_header
+                block header
                 .content
-                    .container.container--main
-                        aside.sidebar
-                            include _common/_sidebar
-                            include _common/_post
-                            include _common/_socials
-                            include _common/_print
-                            include _common/_survey
-                            include _common/_ad--sidebar
+                    .container
                         .main
                             block main
-        include _common/_footer
-        include _common/_members-popup
+        block footer
 
 script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
 script.
@@ -43,4 +35,4 @@ script.
     
 script(src='js/plugins/jquery/jquery.min.js')
 //- script(src='- dev/scripts/main.js')
-script(src='js/main.min.js')
+//- script(src='js/main.min.js')
