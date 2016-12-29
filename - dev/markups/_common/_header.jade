@@ -1,29 +1,58 @@
 header.header
 	.container
 		.header__menu
-			.nav
-				.logo
-					a().logo__link
-						img(src="./img/logo.png").logo-pic
-						span.logo-text
-							| Веб-студия Пиксайт
-				.nav__list
-					.nav__item
+			.logo
+				a().logo__link
+					img(src="./img/logo.png").logo-pic
+					span.logo-text
+						| Веб-студия Пиксайт
+			.nav__trigger
+				a(href="#mmenu").nav__trigger-link
+					img(src="./img/icons/hamburger.svg").nav__trigger-pic
+			.nav(id="mmenu")
+				ul.nav__list
+					li.nav__item
 						a(href="#").nav__link
 							| Компетенции
-					.nav__item
-						a(href="#").nav__link
-							| Портфолио
-					.nav__item
+					li.nav__item
 						a(href="#").nav__link
 							| Услуги
-					.nav__item
+						ul.dropdown__list
+							li.dropdown__item
+								a(href="#").dropdown__link
+									| Разработка сайтов
+								ul.dropdown-sub__list
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
+											| Корпоративный сайт
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
+											| Сайт для государственной организации
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
+											| Сайт для медицинской организации
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
+											| Интеграция с 1С
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
+											| Ускорение сайтов
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
+											| Адаптивный сайт
+							li.dropdown__item
+								a(href="#").dropdown__link
+									| Разработка корпоративных порталов
+							li.dropdown__item
+								a(href="#").dropdown__link
+									| Разработка мобильных приложений
+							li.dropdown__item
+								a(href="#").dropdown__link
+									| Техническая поддержка
+					li.nav__item
 						a(href="events.html").nav__link
 							| Мероприятия
-					.nav__item
-						a(href="#").nav__link
-							| Интернет - магазин
-					.nav__item
+					li.nav__item
 						a(href="#").nav__link
 							| Контакты
 		.header__user

@@ -1,45 +1,764 @@
+// .cube {
+// 	position: relative;
+// }
+
+// .cube__title {
+// 	position: absolute;
+// 	top: 46%;
+//     left: 46%;
+//     width: 550px;
+// 	text-transform: uppercase;
+// 	font-size: rem(36px);
+//     color: #fff;
+
+//     @include laptop {
+// 	    font-size: rem(20px);
+// 	}
+// }
+
+// .cube__list {
+// 	min-height: 490px;
+// 	width: 60%;
+// 	font-size: 0;
+
+// }
+
+// .cube__item {
+// 	position: relative;
+// 	display: inline-block;
+// 	font-size: rem(12px);
+// }
+
+// .cube__item--mobile {
+//     margin-left: 53%;
+//     margin-top: 25px;
+
+//     @include laptop {
+// 	    margin-left: 20%;
+// 	}
+// }
+
+// .cube__item--corporate {
+//     margin-left: rem(9px);
+//     bottom: 0px;
+
+//     @include laptop {
+// 	    margin-left: rem(9px);
+//     	bottom: rem(0px);
+// 	}
+// }
+
+// .cube__item--support {
+// 	margin-left: 22%;
+//     top: -95px;
+
+//     @include laptop {
+// 	    top: 129px;
+//     	margin-left: 249px;
+// 	}
+// }
+
+// .cube__item--site {
+//     margin-left: 3px;
+//     margin-top: 7px;
+
+//     @include laptop {
+// 	    top: 169px;
+//     	margin-left: 240px;
+// 	}
+// }
+
+// .cube__item--learning {
+//     margin-left: 57%;
+//     margin-top: 7px;
+
+
+//     @include laptop {
+// 	    top: 178px;
+//     	margin-left: -520px;
+// 	}
+// }
+
+// .cube__box {
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	font-size: 11px;
+// 	cursor: pointer;
+// }
+
+// .cube__box--mobile {
+// 	position: relative;
+// 	width: 160px;
+// 	height: 160px;
+// 	background: $orange;
+// 	color: #fff;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 28px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 42px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_phone.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--corporate {
+// 	position: relative;
+// 	width: 120px;
+// 	height: 120px;
+// 	background: $green;
+// 	color: #fff;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 14px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 58px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_corp.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--support {
+// 	position: relative;
+// 	width: 120px;
+// 	height: 120px;
+// 	background: $yellow;
+// 	color: #404040;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 14px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 70px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_techn.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--site {
+// 	position: relative;
+// 	width: 160px;
+// 	height: 160px;
+// 	background: $green;
+// 	color: #fff;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 26px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 90px;
+// 		height: 78px;
+// 		background: url(../img/icons/icon_dev.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--learning {
+// 	position: relative;
+// 	width: 120px;
+// 	height: 120px;
+// 	background: $yellow;
+// 	color: #404040;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 17px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 64px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_learn.png) no-repeat;
+// 	}
+// }
+
+// .cube__box-desc {
+// 	position: absolute;
+// 	bottom: 8px;
+// 	left: 0;
+// 	right: 0;
+// }
+
+// .cube__desc {
+// 	display: none;
+// 	position: absolute;
+//     top: 0;
+//     left: 105%;
+//     padding: 35px 15px 35px;
+//     width: 330px;
+// 	font-size: 14px;
+// 	color: #fff;
+// 	z-index: 100;
+// }
+
+// .cube__desc--mobile {
+// 	background: $orange;
+// }
+
+// .cube__desc--corporate {
+// 	background: $green;
+// }
+
+// .cube__desc--support {
+// 	background: $yellow;
+// 	color: #404040;
+// }
+
+// .cube__desc--site {
+// 	background: $green;
+// }
+
+// .cube__desc--learning {
+// 	background: $yellow;
+// 	color: #404040;	
+// }
+
+
+
+
+
+
+
+
+
+.cube {
+	position: relative;
+}
+
+.cube__title {
+	position: absolute;
+	top: 46%;
+    left: 46%;
+    width: 550px;
+	text-transform: uppercase;
+	font-size: rem(36px);
+    color: #fff;
+
+    @include laptop {
+	    top: 50%;
+    	left: 55%;
+    	width: 380px;
+	    font-size: rem(20px);
+	}
+
+	@include tablets {
+	    left: 42%;
+	}
+
+	@include phones {
+		position: static;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: rem(18px);
+	}
+}
+
+.cube__list {
+	position: releative;
+	min-height: 490px;
+	font-size: 0;
+	
+	@include phones {
+	    width: 290px;
+	    margin: 0 auto;
+	}
+}
+
+.cube__item {
+	position: relative;
+	display: inline-block;
+	font-size: rem(12px);
+
+	// @include laptop {
+	// 	position: static;
+	// }
+}
+
+.cube__item--mobile {
+    margin-left: 32%;
+    margin-top: rem(25px);
+
+    @include laptop {
+	    margin-left: 20%;
+	}
+
+	@include tablets {
+	    margin-left: 0;
+	}
+
+	@include phones {
+	    margin-left: 0;
+	    margin-top: 0;
+	}
+}
+
+.cube__item--corporate {
+    margin-left: rem(9px);
+    bottom: 20px;
+
+    @include laptop {
+	    margin-left: rem(9px);
+    	bottom: rem(0px);
+	}
+}
+
+.cube__item--support {
+	top: 70px;
+    right: 511px;
+
+    @include laptop {
+	    top: 129px;
+    	margin-left: 249px;
+	}
+
+	@include tablets {
+		left: -289px;
+		right: 0;
+	    margin-left: 0;
+	}
+
+	@include phones {
+	    top: -31px;
+    	left: 0px;
+	}
+}
+
+.cube__item--site {
+    top: 170px;
+    right: 501px;
+
+    @include laptop {
+	    top: 9px;
+    	margin-left: 350px;
+    	right: 0;
+	}
+
+	@include tablets {
+	    top: 169px;
+    	margin-left: 0;
+    	right: 280px;
+	}
+
+	@include phones {
+	    top: 9px;
+    	right: 0;
+    	margin-left: 9px;
+	}
+}
+
+.cube__item--learning {
+    top: 300px;
+    right: 529px;
+
+
+    @include laptop {
+        top: 138px;
+    	margin-left: 322px;
+	}
+
+	@include tablets {
+	    top: 298px;
+    	margin-left: 0;
+	    right: 475px;
+	}
+
+	@include phones {
+	    top: -22px;
+    	left: 0px;
+	}
+}
+
 .cube__box {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 11px;
+	cursor: pointer;
 }
 
 .cube__box--mobile {
+	position: relative;
 	width: 160px;
 	height: 160px;
 	background: $orange;
 	color: #fff;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 28px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 42px;
+		height: 70px;
+		background: url(../img/icons/icon_phone.png) no-repeat;
+	}
 }
 
 .cube__box--corporate {
+	position: relative;
 	width: 120px;
 	height: 120px;
 	background: $green;
 	color: #fff;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 14px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 58px;
+		height: 70px;
+		background: url(../img/icons/icon_corp.png) no-repeat;
+	}
 }
 
 .cube__box--support {
+	position: relative;
 	width: 120px;
 	height: 120px;
 	background: $yellow;
 	color: #404040;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 14px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 70px;
+		height: 70px;
+		background: url(../img/icons/icon_techn.png) no-repeat;
+	}
 }
 
 .cube__box--site {
+	position: relative;
 	width: 160px;
 	height: 160px;
 	background: $green;
 	color: #fff;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 26px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 90px;
+		height: 78px;
+		background: url(../img/icons/icon_dev.png) no-repeat;
+	}
 }
 
 .cube__box--learning {
+	position: relative;
 	width: 120px;
 	height: 120px;
 	background: $yellow;
 	color: #404040;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 17px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 64px;
+		height: 70px;
+		background: url(../img/icons/icon_learn.png) no-repeat;
+	}
+}
+
+.cube__box-desc {
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+	right: 0;
 }
 
 .cube__desc {
-	font-size: 11px;
+	display: none;
+	position: absolute;
+    top: 0;
+    left: 105%;
+    padding: 35px 15px 35px;
+    width: 330px;
+	font-size: 14px;
 	color: #fff;
+	z-index: 100;
+
+	@include laptop {
+	    top: 70px !important;
+		left: 0 !important;
+		right: 0 !important;
+		width: 100% !important;
+		font-size: 17px;
+	}
 }
+
+.cube__desc--mobile {
+	top: 25px;
+    left: 553px;
+	background: $orange;
+}
+
+.cube__desc--corporate {
+	top: 44px;
+    left: 682px;
+	background: $green;
+}
+
+.cube__desc--support {
+    top: 135px;
+    left: 291px;
+	background: $yellow;
+	color: #404040;
+}
+
+.cube__desc--site {
+    top: 195px;
+    left: 461px;
+	background: $green;
+}
+
+.cube__desc--learning {
+	top: 365px;
+    left: 553px;
+	background: $yellow;
+	color: #404040;	
+}
+
+.cube__overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 90;
+}
+
+
+
+
+
+
+
+
+
+// .cube {
+// 	position: relative;
+// }
+
+// .cube__title {
+// 	position: absolute;
+// 	top: 46%;
+//     left: 46%;
+//     width: 550px;
+// 	text-transform: uppercase;
+// 	font-size: 36px;
+//     color: #fff;
+// }
+
+// .cube__list {
+// 	position: relative;
+// 	width: 70%;
+// 	min-height: 490px;
+// }
+
+// .cube__item--mobile {
+// 	position: absolute;
+//     top: 5%;
+//     left: 31%;
+// }
+
+// .cube__item--corporate {
+//     position: absolute;
+//     top: 9%;
+//     left: 45%;
+// }
+
+// .cube__item--support {
+// 	position: absolute;
+//     top: 27%;
+//     left: 13%;
+// }
+
+// .cube__item--site {
+//     position: absolute;
+//     top: 40%;
+//     left: 24%;
+// }
+
+// .cube__item--learning {
+// 	position: absolute;
+//     top: 75%;
+//     left: 34%;
+// }
+
+// .cube__box {
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	font-size: 11px;
+// }
+
+// .cube__box--mobile {
+// 	position: relative;
+// 	width: 160px;
+// 	height: 160px;
+// 	background: $orange;
+// 	color: #fff;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 28px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 42px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_phone.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--corporate {
+// 	position: relative;
+// 	width: 120px;
+// 	height: 120px;
+// 	background: $green;
+// 	color: #fff;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 14px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 58px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_corp.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--support {
+// 	position: relative;
+// 	width: 120px;
+// 	height: 120px;
+// 	background: $yellow;
+// 	color: #404040;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 14px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 70px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_techn.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--site {
+// 	position: relative;
+// 	width: 160px;
+// 	height: 160px;
+// 	background: $green;
+// 	color: #fff;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 26px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 90px;
+// 		height: 78px;
+// 		background: url(../img/icons/icon_dev.png) no-repeat;
+// 	}
+// }
+
+// .cube__box--learning {
+// 	position: relative;
+// 	width: 120px;
+// 	height: 120px;
+// 	background: $yellow;
+// 	color: #404040;
+
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 17px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 64px;
+// 		height: 70px;
+// 		background: url(../img/icons/icon_learn.png) no-repeat;
+// 	}
+// }
+
+// .cube__box-desc {
+// 	position: absolute;
+// 	bottom: 8px;
+// }
+
+// .cube__desc {
+// 	display: none;
+// 	position: absolute;
+//     top: 0;
+//     left: 105%;
+//     padding: 35px 15px 35px;
+//     width: 330px;
+// 	font-size: 14px;
+// 	color: #fff;
+// 	z-index: 100;
+// }
+
+// .cube__desc--mobile {
+// 	background: $orange;
+// }
+
+// .cube__desc--corporate {
+// 	background: $green;
+// }
+
+// .cube__desc--support {
+// 	background: $yellow;
+// }
+
+// .cube__desc--site {
+// 	background: $green;
+// }
+
+// .cube__desc--learning {
+// 	background: $yellow;	
+// }
+
