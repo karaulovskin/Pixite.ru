@@ -3,12 +3,15 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html>
-	<head><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Pixite</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
 		<link rel="stylesheet" type="text/css" href="js/vendor/mmenu/dist/css/jquery.mmenu.all.css" media="screen, projection, print">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
 	</head>
 	<body>
@@ -20,7 +23,7 @@
 				<header class="header">
 					<div class="container">
 						<div class="header__menu">
-							<div class="logo"><a class="logo__link"><img src="./img/logo.png" class="logo-pic"><span class="logo-text">Веб-студия Пиксайт</span></a></div>
+							<div class="logo"><a href="/" class="logo__link"><img src="./img/logo.png" class="logo-pic"><span class="logo-text">Веб-студия Пиксайт</span></a></div>
 							<div class="nav__trigger"><a href="#mmenu" class="nav__trigger-link"><img src="./img/icons/hamburger.svg" class="nav__trigger-pic"></a></div>
 							<div id="mmenu" class="nav">
 								<ul class="nav__list">
@@ -43,7 +46,7 @@
 										</ul>
 									</li>
 									<li class="nav__item"><a href="events.html" class="nav__link">Мероприятия</a></li>
-									<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+									<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
 								</ul>
 							</div>
 						</div>
@@ -54,74 +57,59 @@
 						</div>
 					</div>
 				</header>
-				<div class="content">
-					<div class="container">
-						<div class="main">
-							<div class="cube">
-								<div class="cube__title">
-									<p>Максимум возможностей вашего сайта</p>
-								</div>
-								<div class="cube__list">
-									<div class="cube__item cube__item--mobile">
-										<div class="cube__box cube__box--mobile">
-											<div class="cube__box-desc">Разработка мобильных приложений</div>
-										</div>
-									</div>
-									<div class="cube__desc cube__desc--mobile">
-										<p>Наша компания занимается разработкой нативных мобильных приложений для Android и IOS, а так же мобильных приложений 1С-Битрикс.</p>
-									</div>
-									<div class="cube__item cube__item--corporate">
-										<div class="cube__box cube__box--corporate">
-											<div class="cube__box-desc">Корпоративные порталы</div>
-										</div>
-									</div>
-									<div class="cube__desc cube__desc--corporate">
-										<p>Наша компания занимается разработкой нативных мобильных приложений для Android и IOS, а так же мобильных приложений 1С-Битрикс. </p>
-									</div>
-									<div class="cube__item cube__item--support">
-										<div class="cube__box cube__box--support">
-											<div class="cube__box-desc">Техническая поддержка</div>
-										</div>
-									</div>
-									<div class="cube__desc cube__desc--support">
-										<p>Наша компания занимается разработкой нативных мобильных приложений для Android и IOS, а так же мобильных приложений 1С-Битрикс. </p>
-									</div>
-									<div class="cube__item cube__item--site">
-										<div class="cube__box cube__box--site">
-											<div class="cube__box-desc">Разработка сайтов</div>
-										</div>
-									</div>
-									<div class="cube__desc cube__desc--site">
-										<p>Наша компания занимается разработкой нативных мобильных приложений для Android и IOS, а так же мобильных приложений 1С-Битрикс. </p>
-									</div>
-									<div class="cube__item cube__item--learning">
-										<div class="cube__box cube__box--learning">
-											<div class="cube__box-desc">Обучение 1С-Битрикс</div>
-										</div>
-									</div>
-									<div class="cube__desc cube__desc--learning">
-										<p>Наша компания занимается разработкой нативных мобильных приложений для Android и IOS, а так же мобильных приложений 1С-Битрикс.</p>
-									</div>
-								</div>
-								<div class="cube__overlay"></div>
-							</div>
-						</div>
-					</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block">
+					<div class="footer__order"><a href="#" class="footer__order-link">Заказать оценку проекта</a></div>
+				</div>
+				<div class="footer__block footer__block--copyright">
+					<div class="copyright">@ 2016 Pixite</div>
+				</div>
+				<div class="footer__block">
+					<div class="footer__calculate"><a href="#" class="footer__calculate-link">Рассчитать стоимость</a></div>
 				</div>
 			</div>
-			<footer class="footer">
-				<div class="container">
-					<div class="footer__block">
-						<div class="footer-order"><a href="#" class="footer-order__link">Заказать оценку проекта</a></div>
+		</footer>
+		<div class="popup">
+			<div class="popup__close"><a href="#" class="popup__close-link">Закрыть</a></div>
+			<div class="popup__title">Заказать оценку проекта</div>
+			<form class="popup__form">
+				<div class="popup__label-wrapp">
+					<div class="popup__label">
+						<input id="name" type="text" placeholder="Имя" class="input">
+						<label for="name" class="label">Имя</label>
 					</div>
-					<div class="footer__block footer__block--copyright">
-						<div class="copyright">@ 2016 Pixite</div>
+					<div class="popup__label">
+						<input id="company" type="text" placeholder="Компания" class="input">
+						<label for="company" class="label">Компания</label>
 					</div>
-					<div class="footer__block">
-						<div class="footer-calculate"><a href="#" class="footer-calculate__link">Рассчитать стоимость</a></div>
+					<div class="popup__label">
+						<input id="email" type="text" placeholder="E-mail" class="input">
+						<label for="email" class="label">E-mail</label>
+					</div>
+					<div class="popup__label">
+						<input id="phone" type="text" placeholder="Телефон" class="input">
+						<label for="phone" class="label">Телефон</label>
+					</div>
+					<div class="popup__label">
+						<input id="phone" type="text" placeholder="Опишите особенности вашего проекта" class="input">
+						<label for="phone" class="label">Комментарий</label>
 					</div>
 				</div>
-			</footer>
+				<div class="popup__download">
+					<div class="popup__download-fake">
+						<input type="text" disabled class="input__download-fake">
+						<div class="text__download-fake">Перетяните файл сюда или</div>
+						<button class="button__download-fake">Выберите</button>
+					</div>
+					<input type="file" multiple class="input__download">
+				</div>
+				<div class="popup__btns">
+					<input type="submit" value="Отправить на оценку" class="popup__submit">
+				</div>
+			</form>
 		</div>
 	</body>
 </html>
@@ -131,4 +119,4 @@
 	
 </script>
 <script src="js/vendor/mmenu/dist/js/jquery.mmenu.all.min.js"></script>
-<script src="js/main.min.js"></script>
+<script src="- dev/scripts/main.js"></script>

@@ -3,12 +3,15 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html>
-	<head><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Мероприятия</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
 		<link rel="stylesheet" type="text/css" href="js/vendor/mmenu/dist/css/jquery.mmenu.all.css" media="screen, projection, print">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
 	</head>
 	<body>
@@ -17,70 +20,98 @@
 		<![endif]-->
 		<div class="wrapper">
 			<div class="maincontent">
-				<header class="header header--fixed">
-					<div class="container">
-						<div class="header__menu">
-							<div class="logo"><a href="index.html" class="logo__link"><img src="./img/logo.png" class="logo-pic"><span class="logo-text">Веб-студия Пиксайт</span></a></div>
-							<div class="nav__trigger"><a href="#mmenu" class="nav__trigger-link"><img src="./img/icons/hamburger.svg" class="nav__trigger-pic"></a></div>
-							<div id="mmenu" class="nav">
-								<ul class="nav__list">
-									<li class="nav__item"><a href="#" class="nav__link">Компетенции</a></li>
-									<li class="nav__item"><a href="#" class="nav__link">Услуги</a>
-										<ul class="dropdown__list">
-											<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка сайтов</a>
-												<ul class="dropdown__list">
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Корпоративный сайт</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Сайт для государственной организации</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Сайт для медицинской организации</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Интеграция с 1С</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Ускорение сайтов</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Адаптивный сайт</a></li>
-												</ul>
-											</li>
-											<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка корпоративных порталов</a></li>
-											<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка мобильных приложений</a></li>
-											<li class="dropdown__item"><a href="#" class="dropdown__link">Техническая поддержка</a></li>
-										</ul>
-									</li>
-									<li class="nav__item"><a href="events.html" class="nav__link">Мероприятия</a></li>
-									<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-								</ul>
+				<div class="header-inner header-inner--events">
+					<header class="header">
+						<div class="container">
+							<div class="header__menu">
+								<div class="logo"><a href="/" class="logo__link"><img src="./img/logo.png" class="logo-pic"><span class="logo-text">Веб-студия Пиксайт</span></a></div>
+								<div class="nav__trigger"><a href="#mmenu" class="nav__trigger-link"><img src="./img/icons/hamburger.svg" class="nav__trigger-pic"></a></div>
+								<div id="mmenu" class="nav">
+									<ul class="nav__list">
+										<li class="nav__item"><a href="#" class="nav__link">Компетенции</a></li>
+										<li class="nav__item"><a href="#" class="nav__link">Услуги</a>
+											<ul class="dropdown__list">
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка сайтов</a>
+													<ul class="dropdown-sub__list">
+														<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Корпоративный сайт</a></li>
+														<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Сайт для государственной организации</a></li>
+														<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Сайт для медицинской организации</a></li>
+														<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Интеграция с 1С</a></li>
+														<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Ускорение сайтов</a></li>
+														<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Адаптивный сайт</a></li>
+													</ul>
+												</li>
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка корпоративных порталов</a></li>
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка мобильных приложений</a></li>
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Техническая поддержка</a></li>
+											</ul>
+										</li>
+										<li class="nav__item"><a href="events.html" class="nav__link">Мероприятия</a></li>
+										<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="header__user">
+								<div class="user">
+									<div class="user__item"><a href="tel:+73512102121" class="user__phone-link"><span class="user__phone-text">+7 351 210 21 21</span></a></div>
+								</div>
 							</div>
 						</div>
-						<div class="header__user">
-							<div class="user">
-								<div class="user__item"><a href="tel:+73512102121" class="user__phone-link"><span class="user__phone-text">+7 351 210 21 21</span></a></div>
-							</div>
+					</header>
+					<div class="header-inner__wrapper">
+						<div class="header-inner__title">
+							<div class="header-inner__title-big header-inner__title-big--border">Мероприятия</div>
+							<div class="header-inner__title-small">События, новости, проекты.</div>
 						</div>
 					</div>
-				</header>
-				<div class="content">
-					<div class="container">
-						<div class="main">
-							<div class="events">
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illum officia optio voluptate magni fugit, animi exercitationem, consequatur ipsam quod quidem repellendus amet, rerum temporibus dolore iusto in eius! Numquam, eius. Fugit possimus magni asperiores autem quibusdam quasi illo sequi beatae, dolorum ducimus iusto ex repellendus voluptas. Aliquam tempore id itaque deleniti dolor voluptate, ratione numquam nulla sint, laborum cumque consequatur repellendus libero eligendi dolorum repudiandae amet. Earum quos itaque aliquid, natus odit, saepe eos delectus expedita nemo, libero porro quae soluta excepturi aperiam asperiores molestias labore veniam sunt doloribus a ducimus. Similique repudiandae odit, doloremque voluptatem a tenetur soluta tempore ipsa explicabo placeat aliquam. Voluptatem natus est et officiis nihil, placeat totam, cumque rem blanditiis minima saepe iusto repellat architecto at dolor voluptatibus atque asperiores eum vel doloremque itaque omnis! Ipsam et ipsum nesciunt sapiente. Doloremque ea earum ut recusandae molestiae veniam, maxime consequatur placeat iure error soluta eum nam atque eligendi voluptates ratione facere eos odit eius corrupti assumenda illo? Officia animi, quisquam nisi voluptas. Blanditiis voluptate illum nam quam, voluptatibus cumque recusandae, quo fugiat, libero fugit id eveniet incidunt beatae cupiditate perferendis consectetur modi accusantium. Laboriosam recusandae iste, molestiae! Dolor alias at reiciendis magnam rem voluptatum, pariatur.</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo libero soluta officiis, eligendi distinctio quidem laboriosam officia unde. Reprehenderit aperiam hic porro sit provident soluta eligendi ad, voluptatem beatae cupiditate, nostrum cum vero! Sed vel quasi consectetur soluta vero earum fugiat, praesentium corrupti ex unde quod illum eum libero nemo voluptas sunt laudantium obcaecati esse deserunt doloremque aperiam cumque. Unde vitae, ad! Accusamus odit voluptates amet natus inventore vel beatae aliquam recusandae vitae repellendus quidem unde doloremque saepe adipisci quibusdam cupiditate rerum quod autem ratione illum quos, deserunt impedit debitis! Inventore perspiciatis incidunt recusandae, fuga similique aspernatur numquam expedita illum est ad unde culpa exercitationem ducimus modi, repudiandae, itaque hic! Qui, reiciendis officiis assumenda fuga omnis iusto accusantium commodi, suscipit cumque, nesciunt facilis expedita sed consequatur! Nobis perferendis quaerat error? Earum aliquam exercitationem, facere voluptatibus error inventore sed, dolorum pariatur nihil voluptates accusantium odio deleniti! Placeat quos obcaecati officiis autem aspernatur dolorem natus maiores, vel officia ab, tempora ex deleniti, quasi error fugiat? Quibusdam esse iusto, ea provident assumenda sapiente sequi, laboriosam debitis exercitationem repudiandae, incidunt iste necessitatibus ratione error! Enim eos aliquid laudantium aspernatur distinctio eius ad suscipit quo totam soluta omnis nam labore perferendis error eaque, odio, nihil. Voluptates tenetur a nulla maxime odit alias esse eligendi totam animi aut, reiciendis aliquam numquam nihil cupiditate. Repellat odio saepe neque nobis dolor laboriosam voluptatem minima aliquam autem officiis numquam magni cupiditate ratione officia aperiam maxime sint sed consequatur, dolorem necessitatibus, expedita excepturi incidunt eveniet dolorum doloremque. Velit fugiat deserunt, tempora doloribus quod sequi, repellat nesciunt magni expedita eius dignissimos, dicta nostrum molestiae odit. Dolorem corrupti, accusamus odio nobis perspiciatis quam expedita esse cum et adipisci quia, laboriosam quasi perferendis a facere hic laudantium ullam dolores nulla. Libero facere, omnis, at quia deserunt voluptas tempore voluptatibus beatae, quis quos optio!</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur amet, dolorum corporis illo dignissimos culpa atque error vitae nulla, necessitatibus odit sit libero saepe porro omnis alias sapiente aspernatur eaque, suscipit. Laboriosam, blanditiis, alias? Impedit perspiciatis labore aliquid placeat quae quisquam sint deleniti eum, ut velit debitis expedita sit earum et illum ad iure voluptas neque cum ipsam. Facere earum sit, sint nostrum possimus, accusamus fugit ullam quas fugiat iste provident, numquam eius molestiae ipsa. Accusantium accusamus eaque assumenda nulla similique sapiente minima voluptas voluptatibus a natus debitis ad doloremque, magnam iure nemo culpa consequuntur qui. Hic culpa officiis fuga.</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iusto dignissimos impedit in cumque at explicabo veritatis nesciunt quaerat minus porro soluta hic voluptate consectetur dolore rem, laborum rerum cupiditate facilis, laudantium alias enim vitae. Ut, ab fuga libero harum dolor temporibus numquam nihil, natus aperiam rerum cumque voluptatibus. Alias mollitia veniam totam, laboriosam corrupti recusandae? Excepturi, blanditiis, asperiores. Asperiores ab ratione veniam, iusto, quidem culpa molestiae nesciunt non itaque deserunt facilis soluta laborum vero nulla sapiente, aperiam libero dolorem ipsum vitae velit alias quasi! Enim voluptates nihil dignissimos totam aliquid magnam, odit quae unde, quod, voluptas numquam perferendis voluptatem. Mollitia quisquam error excepturi odit ea rerum, nam, modi earum porro libero amet adipisci quidem esse fugiat eum sunt. Illo dolore vel culpa suscipit odit earum voluptas fuga sit quis asperiores a, eum, accusantium, molestias quidem nihil at voluptatum iusto sint quae. A voluptate distinctio, animi qui alias corporis consequatur quibusdam suscipit ducimus esse! Corporis itaque dicta, possimus aspernatur ad est neque iusto. At magni dolorem, voluptatibus libero rerum porro iste quas ad adipisci eligendi odio animi provident necessitatibus expedita dicta maxime nihil quaerat numquam excepturi corporis laudantium sit vitae eum quos! Tempora velit, temporibus odit quia nisi nobis ullam, quam cupiditate consequuntur cum assumenda, laboriosam error vitae repellat perspiciatis fuga, fugit laudantium! Sunt rem neque consequatur voluptas sequi adipisci modi ipsum dolorum consectetur aliquid totam eius quo cumque hic repudiandae incidunt unde minus reprehenderit consequuntur debitis sit perspiciatis, eos nam. Velit est sed aperiam placeat sit neque, eligendi consequatur dolore impedit ipsa ab, deserunt tempore necessitatibus quaerat libero harum dolorum dolores atque! Aperiam enim dolores, eum rem, aliquam, adipisci quo iure quasi atque ullam culpa! Corporis distinctio similique commodi, culpa eveniet maiores iure molestiae nemo neque iste delectus ipsa ducimus dolores autem dolor aliquid a in, cupiditate assumenda. Asperiores accusamus dicta distinctio illum vero deserunt, alias quibusdam neque minus optio magnam repudiandae nostrum quas dolores, suscipit reprehenderit, impedit at officia perspiciatis maxime soluta illo! Delectus, earum! Saepe architecto sequi distinctio incidunt, nisi soluta, iste beatae velit debitis dolorum voluptas molestias voluptates blanditiis dolorem eius optio dignissimos eveniet ex quidem quisquam. Velit itaque optio quam possimus quasi modi aliquam eius expedita! Dolorum nulla beatae obcaecati alias, molestias commodi, quisquam fugiat porro ipsum hic, quia sapiente, quae. Eveniet odio aut, ab, alias possimus sint quibusdam rerum quas at atque deserunt, nam consequuntur itaque distinctio molestias ullam rem quasi veniam commodi. Quam!</p>
-							</div>
+				</div>
+				<div class="inner">
+					<div class="container-inner">
+						<div class="events">
+							<ul class="events__list">
+								<li class="events__item">
+									<div style="background-image: url(/img/events-img.jpg);" class="events__img"><img src="/img/events-img.jpg" class="events__img-pic"></div>
+									<div class="events__title inner__title">Cеминар «Максимум возможностей для вашего бизнеса в интернете»</div>
+									<div class="events__desc">
+										<p>Как увеличить доходность интернет-магазина, повысить конверсию сайта и грамотно организовать работу сотрудников компании? Только полезная информация и практические рекомендации опытных ИТ-специалистов на бесплатном семинаре «Максимум возможностей для вашего бизнеса в интернете».</p>
+									</div>
+									<div class="events__btns"><a href="#" class="events__link">Читать далее</a></div>
+								</li>
+								<li class="events__item">
+									<div style="background-image: url(/img/events-img.jpg);" class="events__img"><img src="/img/events-img.jpg" class="events__img-pic"></div>
+									<div class="events__title inner__title">Cеминар «Максимум возможностей для вашего бизнеса в интернете»</div>
+									<div class="events__desc">
+										<p>Как увеличить доходность интернет-магазина, повысить конверсию сайта и грамотно организовать работу сотрудников компании? Только полезная информация и практические рекомендации опытных ИТ-специалистов на бесплатном семинаре «Максимум возможностей для вашего бизнеса в интернете».</p>
+									</div>
+									<div class="events__btns"><a href="#" class="events__link">Читать далее</a></div>
+								</li>
+								<li class="events__item">
+									<div style="background-image: url(/img/events-img.jpg);" class="events__img"><img src="/img/events-img.jpg" class="events__img-pic"></div>
+									<div class="events__title inner__title">Cеминар «Максимум возможностей для вашего бизнеса в интернете»</div>
+									<div class="events__desc">
+										<p>Как увеличить доходность интернет-магазина, повысить конверсию сайта и грамотно организовать работу сотрудников компании? Только полезная информация и практические рекомендации опытных ИТ-специалистов на бесплатном семинаре «Максимум возможностей для вашего бизнеса в интернете».</p>
+									</div>
+									<div class="events__btns"><a href="#" class="events__link">Читать далее</a></div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<footer class="footer footer--fixed">
-				<div class="container">
-					<div class="footer__block">
-						<div class="footer-order"><a href="#" class="footer-order__link">Заказать оценку проекта</a></div>
-					</div>
-					<div class="footer__block footer__block--copyright">
-						<div class="copyright">@ 2016 Pixite</div>
-					</div>
-					<div class="footer__block">
-						<div class="footer-calculate"><a href="#" class="footer-calculate__link">Рассчитать стоимость</a></div>
-					</div>
-				</div>
-			</footer>
 		</div>
+		<footer class="footer footer-inner">
+			<div class="container">
+				<div class="footer__block">
+					<div class="footer__order footer-inner__order"><a href="#" class="footer__order-link">Заказать оценку проекта</a></div>
+				</div>
+				<div class="footer__block footer__block--copyright">
+					<div class="copyright">@ 2016 Pixite</div>
+				</div>
+				<div class="footer__block">
+					<div class="footer__calculate footer-inner__calculate"><a href="#" class="footer__calculate-link">Рассчитать стоимость</a></div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -89,4 +120,4 @@
 	
 </script>
 <script src="js/vendor/mmenu/dist/js/jquery.mmenu.all.min.js"></script>
-<script src="js/main.min.js"></script>
+<script src="- dev/scripts/main.js"></script>

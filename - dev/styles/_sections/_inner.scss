@@ -1,0 +1,48 @@
+.inner {
+	padding-top: 54px;
+	padding-bottom: 54px;
+	background: #fff;
+}
+
+.inner__title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.inner__list {
+	margin-left: 13px;
+	margin-bottom: 30px;
+}
+
+.inner__item {
+	position: relative;
+	margin-bottom: 6px;
+	font-size: 13px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 5px;
+		left: -13px;
+		width: 5px;
+		height: 5px;
+		background: $green;
+	}
+}
+
+.inner__text {
+	p {
+		margin-bottom: 20px;
+		font-size: 13px;
+	}
+
+	span {
+		font-size: 16px;
+	}
+}
+
+.inner__block {
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #252525;
+}

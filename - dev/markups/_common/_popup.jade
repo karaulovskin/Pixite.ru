@@ -1,0 +1,29 @@
+.popup
+	.popup__close
+		a(href="#").popup__close-link Закрыть
+	.popup__title Заказать оценку проекта
+	form.popup__form
+		.popup__label-wrapp
+			.popup__label
+				input.input(id="name" type="text" placeholder="Имя")
+				label.label(for="name") Имя
+			.popup__label
+				input.input(id="company" type="text" placeholder="Компания")
+				label.label(for="company") Компания
+			.popup__label
+				input.input(id="email" type="text" placeholder="E-mail")
+				label.label(for="email") E-mail
+			.popup__label
+				input.input(id="phone" type="text" placeholder="Телефон")
+				label.label(for="phone") Телефон
+			.popup__label
+				input.input(id="phone" type="text" placeholder="Опишите особенности вашего проекта")
+				label.label(for="phone") Комментарий
+		.popup__download
+			.popup__download-fake
+				input.input__download-fake(type="text" disabled)
+				.text__download-fake Перетяните файл сюда или
+				button.button__download-fake Выберите
+			input.input__download(type="file" multiple)
+		.popup__btns
+			input.popup__submit(type="submit" value="Отправить на оценку")

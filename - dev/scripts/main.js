@@ -156,5 +156,105 @@ $(document).ready(function(){
 
 	}());
 
+
+
+	// MAPS
+	(function(){
+
+		ymaps.ready(init);
+		    var 
+		    	myMap,
+		    	myPlacemark;
+
+	    function init(){     
+	        myMap = new ymaps.Map("map", {
+	            center: [55.16023070, 61.41568621],
+	            zoom: 16,
+	            controls: []
+	        });
+
+	        myPlacemark = new ymaps.Placemark([55.16023070, 61.41568621], 
+	        	{
+					hintContent: 'Pixite.ru', 
+					balloonContent: 'Pixite.ru'
+				}
+
+				// {
+				// 	iconLayout: 'default#image',
+			 //        iconImageHref: '/local/templates/pixite/img/logo-contacts.png',
+			 //        iconImageSize: [50, 50],
+			 //        iconImageOffset: [-15, -27]
+				// }
+			);
+
+	        myMap.geoObjects.add(myPlacemark);
+	    }
+
+	    var	
+    		linkMap = $('.point__link-map'),
+    		linkCont = $('.contacts__link-contacts'),
+	    	overlay = $('.contacts__map-overlay'),
+	    	location = $('.contacts__location');
+
+		$(linkMap).click(function(e){
+			e.preventDefault();
+			$(overlay).fadeOut();
+			$(location).fadeOut();
+			$(linkCont).fadeIn();
+		});
+
+		$(linkCont).click(function(e){
+			e.preventDefault();
+			$(overlay).fadeIn();
+			$(location).fadeIn();
+			$(linkCont).fadeOut();
+		});
+ 
+	}());
+
+
+
+	// POPUP
+	(function(){
+
+		var
+			popup = $('.popup'),
+			close = $('.popup__close-link'),
+			order = $('.footer-order__link'),
+			overlay = $('.cube__overlay');
+
+		$(order).click(function(){
+			$(popup).fadeIn();
+			$(overlay).fadeIn();
+		});
+		
+		$(close).click(function(){
+			$(popup).fadeOut();
+			$(overlay).fadeOut();
+		});
+
+		$(overlay).click(function(){
+			$(popup).fadeOut();
+			$(overlay).fadeOut();
+		});
+
+
+
+		var
+			input = $('.input__download');
+			textFake = $('.text__download-fake');
+
+		$(input).on('change', function() {
+			realVal = $(this).val();
+			lastIndex = realVal.lastIndexOf('\\') + 1;
+	      	if(lastIndex !== -1) {
+	        realVal = realVal.substr(lastIndex);
+	        $(textFake).animate({opacity: 0});
+	        $(this).prev('.popup__download-fake').find('.input__download-fake').val(realVal);
+	      }
+	   });
+
+	}());
+
 });
 

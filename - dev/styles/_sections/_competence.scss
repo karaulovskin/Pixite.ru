@@ -1,0 +1,181 @@
+.clients {
+	margin-bottom: 20px;
+	font-size: 0;
+}
+
+.clients-left,
+.clients-right {
+	@include inline-block(top);
+	font-size: 16px;
+}
+
+.clients-left {
+	width: 40%
+}
+
+.clients-right {
+	width: 60%
+}
+
+.clients__list {
+	font-size: 0;
+}
+
+.clients__item {
+	@include inline-block(top);
+	width: 50%;
+	margin-bottom: 12px;
+    padding-left: 56px;
+	font-size: 16px;
+}
+
+.clients__link {
+	display: inline-block;
+	height: 50px;
+	&:before {
+		content: "";
+		@include inline-block(middle);
+		height: 100%;
+		width: 0;
+	}
+}
+
+.clients__img-pic {
+	@include inline-block(middle);
+}
+
+.clients__img-pic--conar {
+	margin-top: 22px;
+}
+
+.activity {
+	margin-bottom: 20px;
+}
+
+.activity__list {
+	font-size: 0;
+}
+
+.activity__item {
+	@include inline-block(top);
+	width: 20%;
+	font-size: 16px;
+}
+
+.activity__img-pic {
+	display: block;
+	margin: 0 auto;
+}
+
+.activity__desc {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 11px
+}
+
+.tasks {
+	font-size: 0;
+}
+
+.tasks__left,
+.tasks__right {
+	@include inline-block(top);
+	width: 50%;
+}
+
+.tasks__item {
+	margin-bottom: 15px;
+}
+
+.tasks__item-desc {
+	position: relative;
+	margin-left: 50px;
+	text-transform: uppercase;
+	font-size: 11px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: -3px;
+		left: -50px;
+		width: 36px;
+		height: 36px;
+	}
+
+	&:after {
+		position: absolute;
+		top: 4px;
+		left: -37px;
+		font-size: 16px;
+		color: #fff;
+	}
+}
+
+.tasks__item-desc--orange {
+	text-transform: uppercase;
+	font-size: 11px;
+	
+	&:before {
+		background: $orange;
+	}
+
+	&:after {
+		content: "1";
+		left: -36px;
+	}
+}
+
+.tasks__item-desc--green {
+	text-transform: uppercase;
+	font-size: 11px;
+	
+	&:before {
+		background: $green;
+	}
+
+	&:after {
+		content: "2";
+	}
+}
+
+.tasks__item-desc--yellow {
+	text-transform: uppercase;
+	font-size: 11px;
+	
+	&:before {
+		background: $yellow;
+	}
+
+	&:after {
+		content: "3";
+	}
+}
+
+.tasc__desc {
+	font-size: 11px;
+}
+
+.tasks-logo__list {
+	font-size: 0;
+}
+
+.tasks-logo__item {
+	@include inline-block(top);
+	width: 50%;
+	font-size: 16px;
+}
+
+.tasks-logo__img {
+	height: 63px;
+
+	&:before {
+		content: "";
+		@include inline-block(middle);
+		height: 100%;
+		width: 0;
+	}
+}
+
+.tasks-logo__img-pic {
+	@include inline-block(middle);
+}

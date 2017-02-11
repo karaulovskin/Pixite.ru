@@ -1,0 +1,213 @@
+.popup {
+	display: none;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -226px;
+    width: 445px;
+    padding: 28px 70px;
+    background: #fff;
+    z-index: 100;
+
+    @include phones {
+    	width: 300px;
+    	margin-left: -152px;
+    	padding: 20px 28px;
+    }
+}
+
+.popup:before {
+	content: "";
+	position: absolute;
+	top: -7px;
+	right: 0;
+	width: 98%;
+	height: 7px;
+	background: rgba(194, 194, 194, .76);
+
+	@include phones {
+    	top: -4px;
+		height: 4px;
+    }
+}
+
+.popup:after {
+	content: "";
+	position: absolute;
+	top: -7px;
+    right: -7px;
+    width: 7px;
+    height: 100%;
+	background: rgba(194, 194, 194, .76);
+
+	@include phones {
+		top: -4px;
+	    right: -4px;
+	    width: 4px;
+    }
+}
+
+.popup__close-link {
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background: url(../img/popup-clouse.png) no-repeat;
+	background-size: contain;
+
+	@include phones {
+    	width: 12px;
+    }
+}
+
+.popup__title {
+    margin-bottom: 24px;
+	font-size: rem(18px);
+	text-transform: uppercase;
+    color: #404040;
+
+    @include phones {
+    	margin-bottom: 10px;
+    	font-size: rem(14px);
+    }
+}
+
+.popup__label-wrapp {
+	margin-bottom: 18px;
+
+	& :last-child {
+    	margin-bottom: 0;
+    }
+}
+
+.popup__label {
+	position: relative;
+	margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+
+    @include phones {
+    	margin-bottom: rem(15px);
+    }
+}
+
+.label {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    display: none;
+    text-transform: uppercase;
+    font-size: rem(11px);
+    color: $orange;
+}
+
+.input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    font-size: rem(11px);
+    color: #404040;
+}
+
+.input:focus + label {
+    display: block;
+}
+
+.popup__download {
+	position: relative;
+    margin-bottom: 18px;
+}
+
+.popup__download-fake {
+	&:before {
+		content: "";
+		position: absolute;
+		top: 6px;
+		left: 8px;
+		width: 38px;
+		height: 38px;
+		background: url(../img/icons/input-download.png) no-repeat;
+		background-size: contain;
+
+		@include phones {
+	    	width: rem(32px);
+	    }
+	}
+}
+
+.input__download-fake {
+	width: 100%;
+	padding: 17px;
+	background: #fff;
+    border: 1px dashed #c2c2c2;
+    @include border-radius(5px);
+
+    @include phones {
+    	padding: rem(14px);
+    	padding: 14px 58px 14px 40px;
+    }
+
+}
+
+.text__download-fake {
+	position: absolute;
+    top: 18px;
+    right: 82px;
+	text-transform: uppercase;
+	font-size: rem(11px);
+	color: #404040;
+
+	@include phones {
+    	top: 17px;
+    	right: 61px;
+    	font-size: rem(9px);
+    }
+}
+
+.button__download-fake {
+    position: absolute;
+    top: 18px;
+    right: 7px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: rem(11px);
+	color: #c2c2c2;
+	background: transparent;
+
+	@include phones {
+		top: 17px;
+    	right: 4px;
+    	font-size: rem(9px);
+    }
+}
+
+.input__download {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 16px;
+	opacity: 0;
+
+	@include phones {
+		padding: 13px;
+    }
+}
+
+
+
+.popup__submit {
+	width: 100%;
+	padding: 14px 0;
+	font-size: rem(14px);
+	text-transform: uppercase;
+	color: #fff;
+	background: #5c9641;
+
+	@include phones {
+    	font-size: rem(12px);
+    }
+}

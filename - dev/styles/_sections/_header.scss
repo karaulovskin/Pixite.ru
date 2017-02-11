@@ -1,4 +1,5 @@
 .header {
+	height: 74px;
 	padding: 25px 0 25px;
 	color: #fff;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -31,9 +32,11 @@
 .logo {
 	float: left;
 	width: 39%;
+	// width: 140px;
 
 	@include phones {
 		width: 50%;
+		// width: 120px;
 	}
 }
 
@@ -120,6 +123,7 @@
 	text-transform: uppercase;
 	font-size: 11px;
 	color: #fff;
+	font-family: 'sf_ui__textlight';
 }
 
 .dropdown__list {
@@ -129,7 +133,7 @@
     padding: 5px 10px;
 	width: 300px;
     text-align: left;
-	background: rgba(0, 0, 0, .8);
+	background: rgba(6, 20, 28, .8);
 	z-index: 100;
 
 	@include laptop {
@@ -162,6 +166,7 @@
 
 .dropdown-sub__link {
     color: #fff;
+    font-family: 'sf_ui__textlight';
 }
 
 
