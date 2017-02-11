@@ -1,0 +1,55 @@
+.compozit__block {
+	margin-bottom: 20px;
+	@extend %clearfix;
+}
+
+.compozit__left {
+	float: left;
+	width: 34%;
+
+}
+
+.compozit__right {
+	float: left;
+	width: 66%;
+
+}
+
+.compozit__btn {
+	display: inline-block;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	color: $green;
+	border: 1px solid $green;
+
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+		background: $green;
+	}
+}
+
+.speed__list {
+	margin-left: 80px;
+}
+
+.speed__item {
+	margin-bottom: 20px;
+	@extend %clearfix;
+
+	&:nth-child(2n) {
+		text-align: right;
+	}
+}
+
+.speed__left,
+.speed__right {
+	float: left;
+	width: 50%;
+}
+
+.speed__padding {
+	padding-top: 15px;
+}
