@@ -3,6 +3,10 @@
 	padding: 25px 0 25px;
 	color: #fff;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+	@include phones {
+		height: 70px;
+	}
 }
 
 .header--fixed {
@@ -42,6 +46,14 @@
 
 .logo__link {
 	display: inline-block;
+
+	@include tablets {
+		width: 120px;
+	}
+
+	@include phones {
+		width: 90px;
+	}
 }
 
 .logo-pic {
@@ -61,6 +73,10 @@
     @include laptop {
 		display: block;
 	}
+
+	@include phones {
+		top: 1px;
+	}
 }
 
 .nav__trigger-link {
@@ -69,6 +85,10 @@
 
 .nav__trigger-pic {
 	width: 21px;
+
+	@include phones {
+		width: 16px;
+	}
 }
 
 .nav__list {
@@ -192,6 +212,12 @@
 	    top: 2px;
 	    right: 30px;
 	}
+
+    @include phones {
+	    position: absolute;
+	    top: -2px;
+	    right: 30px;
+	}
 }
 
 .user__phone-link {
@@ -201,4 +227,8 @@
 
 .user__phone-text {
 	font-size: 14px;
+
+	@include phones {
+	    font-size: 13px;
+	}
 }

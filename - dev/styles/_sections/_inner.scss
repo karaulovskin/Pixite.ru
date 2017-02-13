@@ -2,12 +2,25 @@
 	padding-top: 54px;
 	padding-bottom: 54px;
 	background: #fff;
+
+	@include phones {
+		padding-top: 30px;
+	    padding-bottom: 5px;
+	}
 }
 
 .inner__title {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	font-size: 18px;
+
+	@include tablets {
+	    font-size: 16px;
+	}
+
+	@include phones {
+	    font-size: 12px;
+	}
 }
 
 .inner__list {
@@ -35,10 +48,19 @@
 	p {
 		margin-bottom: 20px;
 		font-size: 13px;
+
+		@include phones {
+			margin-bottom: 18px;
+		    font-size: 12px;
+		}
 	}
 
 	span {
 		font-size: 16px;
+
+		@include phones {
+		    font-size: 14px;
+		}
 	}
 }
 

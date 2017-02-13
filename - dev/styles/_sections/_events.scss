@@ -25,6 +25,18 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #06141c;
+
+    @include tablets {
+		height: 35vw;
+	}
+}
+
+.events-inner__img {
+	width: 750px;
+
+    @include tablets {
+		height: 35vw;
+	}
 }
 
 .events__img-pic,
@@ -35,7 +47,11 @@
 }
 
 .events__desc {
-	font-size: 13px;
+	font-size: 12px;
+
+	@include phones {
+		margin-bottom: 12px;
+	}
 }
 
 .events__link {
@@ -85,16 +101,23 @@
 	&:before {
 		content: "";
 		position: absolute;
-		top: 26px;
+		top: 50%;
 		left: 22px;
-		width: 45px;
-		height: 45px;
+		margin-top: -23px;
+		width: 46px;
+		height: 46px;
+		background-size: contain;
 	}
 }
 
 .events-inner__seminar-date {
 	float: left;
-	width: 180px;
+	width: 29%;
+
+	@include phones {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 
 	&:before {
 		background: url(../img/icons/pr_seminar_date.png) no-repeat
@@ -103,7 +126,11 @@
 
 .events-inner__seminar-local {
 	float: right;
-	width: 424px;
+	width: 67%;
+
+	@include phones {
+		width: 100%;
+	}
 
 	&:before {
 		background: url(../img/icons/pr_seminar_local.png) no-repeat
@@ -117,7 +144,6 @@
 
 .events-inner__img {
 	float: right;
-	width: 750px;
 	height: 400px;
 }
 

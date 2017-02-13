@@ -10,11 +10,19 @@
 }
 
 .clients-left {
-	width: 40%
+	width: 40%;
+
+	@include phones {
+	    width: 100%;
+	}
 }
 
 .clients-right {
-	width: 60%
+	width: 60%;
+
+	@include phones {
+	    width: 100%;
+	}
 }
 
 .clients__list {
@@ -27,6 +35,22 @@
 	margin-bottom: 12px;
     padding-left: 56px;
 	font-size: 16px;
+
+	@include tablets {
+	    padding-left: 20px;
+	}
+
+	@include phones {
+		padding-left: 0;
+
+	    &:nth-child(2n) {
+			padding-left: 8px;
+		}
+
+		&:nth-child(2n+1) {
+			padding-right: 8px
+		}
+	}
 }
 
 .clients__link {
@@ -42,6 +66,7 @@
 
 .clients__img-pic {
 	@include inline-block(middle);
+	max-width: 100%;
 }
 
 .clients__img-pic--conar {
@@ -60,6 +85,29 @@
 	@include inline-block(top);
 	width: 20%;
 	font-size: 16px;
+
+	@include phones {
+	    width: 100%;
+	    margin-bottom: 16px;
+	    font-size: 0;
+	}
+}
+
+.activity__img {
+	height: 80px;
+
+	// &:before {
+	// 	content: "";
+	// 	@include inline-block(middle);
+	// 	height: 100%;
+	// 	width: 0;
+	// }
+
+	@include phones {
+		@include inline-block(middle);
+	    width: 28%;
+	    height: auto;
+	}
 }
 
 .activity__img-pic {
@@ -70,7 +118,19 @@
 .activity__desc {
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 11px
+	font-size: 11px;
+
+	@include tablets {
+	    font-size: 9px;
+	}
+
+	@include phones {
+		@include inline-block(middle);
+	    width: 72%;
+	    padding-left: 24px;
+	    text-align: left;
+	    font-size: 11px;
+	}
 }
 
 .tasks {
@@ -81,6 +141,26 @@
 .tasks__right {
 	@include inline-block(top);
 	width: 50%;
+
+	@include phones {
+		width: 100%;
+	}
+}
+
+.tasks__left {
+	padding-right: 10px;
+
+	@include phones {
+		padding-right: 0;
+	}
+}
+
+.tasks__right {
+	padding-left: 10px;
+
+	@include phones {
+		padding-left: 0;
+	}
 }
 
 .tasks__item {
@@ -163,6 +243,14 @@
 	@include inline-block(top);
 	width: 50%;
 	font-size: 16px;
+
+	&:nth-child(2n+1) {
+		padding-right: 5px;
+	}
+
+	&:nth-child(2n) {
+		padding-left: 5px;
+	}
 }
 
 .tasks-logo__img {
@@ -178,4 +266,5 @@
 
 .tasks-logo__img-pic {
 	@include inline-block(middle);
+	max-width: 100%;
 }

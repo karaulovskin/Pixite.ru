@@ -1,3 +1,11 @@
+.compozit {
+	margin-top: 30px;
+
+	@include tablets {
+	    margin-top: 0;
+	}
+}
+
 .compozit__block {
 	margin-bottom: 20px;
 	@extend %clearfix;
@@ -6,13 +14,39 @@
 .compozit__left {
 	float: left;
 	width: 34%;
-
+	
+	@include tablets {
+	    width: 100%;
+	}
 }
 
 .compozit__right {
 	float: left;
 	width: 66%;
+	
+	@include tablets {
+	    width: 100%;
+	}
+}
 
+.compozit__img {
+
+	@include tablets {
+		padding: 0 20px;
+	}
+}
+
+.compozit__img-pic {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.compozit__btns {
+	@include tablets {
+		margin-bottom: 20px;
+	    text-align: center;
+	}
 }
 
 .compozit__btn {
@@ -29,10 +63,19 @@
 		color: #fff;
 		background: $green;
 	}
+	
+	@include tablets {
+		padding: 6px 35px;
+	}
+
 }
 
 .speed__list {
 	margin-left: 80px;
+
+	@include tablets {
+		margin-left: 0;
+	}
 }
 
 .speed__item {
@@ -50,6 +93,31 @@
 	width: 50%;
 }
 
+.speed__left {
+	@include phones {
+		padding-right: 10px;
+	}
+}
+
+.speed__right {
+	@include phones {
+		padding-left: 10px;
+	}
+}
+
 .speed__padding {
 	padding-top: 15px;
+
+	@include phones {
+		padding-top: 0;
+	}
+}
+
+.speed__img-pic {
+	display: block;
+	max-width: 100%;
+
+	@include tablets {
+		margin: 0 auto;
+	}
 }

@@ -43,14 +43,18 @@
 	text-align: center;
 	border: 1px solid #fff;
 
+	@include phones {
+	    width: 100px;
+	}
+
 	a {
 		display: inline-block;
 		font-size: 12px;
 		color: #fff;
-	}
 
-	@include phones {
-	    width: 100px;
+		@include phones {
+		    font-size: 10px;
+		}
 	}
 }
 
@@ -66,6 +70,10 @@
 
 .copyright {
 	line-height: 34px;
+
+	@include phones {
+	    font-size: 10px;
+	}
 }
 
 .footer__calculate {

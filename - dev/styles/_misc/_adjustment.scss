@@ -63,7 +63,7 @@ a {	text-decoration: none;
 	@include transition(.3s);
 
 	&:hover {
-		text-decoration: underline;
+		// text-decoration: underline;
 	}
 }
 

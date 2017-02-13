@@ -15,13 +15,17 @@
 @media screen and (max-width: 768px) { // tablets
 	.container {
 		width: 480px;
-		width: 96%;
+		width: 90%;
+	}
+
+	.container-inner {
+		width: 90%
 	}
 }
 
 @media screen and (max-width: 480px) { // phones
 	.container {
 		width: auto;
-		width:96%;
+		width:90%;
 	}
 }
