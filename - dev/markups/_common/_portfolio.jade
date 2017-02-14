@@ -1,6 +1,38 @@
 .portfolio
-	.portfolio__podcast
-		.portfolio__podcast-left
-		.portfolio__podcast-right
 	.portfolio__contacts
-		
+		.container-inner
+			.portfolio__contacts-left
+				.inner__title Свяжитесь с нами
+				.inner__title Блок с контактами
+				.inner__title Адрес
+				.inner__title Почта
+				.inner__title Телефон
+			.portfolio__contacts-right
+				.portfolio__contacts-form.contacts-form
+					.popup__title.contacts-form__title Форма для связи
+					form.popup__form
+						.popup__label-wrapp
+							.popup__label
+								input.input.input--transparent(id="name" type="text" placeholder="Имя")
+								label.label(for="name") Имя
+							.popup__label
+								input.input.input--transparent(id="company" type="text" placeholder="Компания")
+								label.label(for="company") Компания
+							.popup__label
+								input.input.input--transparent(id="email" type="text" placeholder="E-mail")
+								label.label(for="email") E-mail
+							.popup__label
+								input.input.input--transparent(id="phone" type="text" placeholder="Телефон")
+								label.label(for="phone") Телефон
+							.popup__label
+								input.input.input--transparent(id="phone" type="text" placeholder="Опишите особенности вашего проекта")
+								label.label(for="phone") Комментарий
+						.popup__download
+							.popup__download-fake
+								input.input__download-fake(type="text" disabled)
+								.text__download-fake Перетяните файл сюда или
+								button.button__download-fake Выберите
+							input.input__download.input--transparent(type="file" multiple)
+						.popup__btns
+					input.popup__submit(type="submit" value="Отправить на оценку")
+

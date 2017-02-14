@@ -10,7 +10,6 @@
 		<title>Портфолио</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
-		<link rel="stylesheet" type="text/css" href="js/vendor/mmenu/dist/css/jquery.mmenu.all.css" media="screen, projection, print">
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
 	</head>
@@ -69,29 +68,104 @@
 							</ul>
 						</nav>
 					</div>
+					<div class="header-portfolio__work work">
+						<div class="work__wrapp">
+							<div class="work__left"><a href="#" class="work__link--big">
+									<div style="background-image: url(../img/portfolio/works_1.jpg)" class="work__img--big"><img src="./img/portfolio/works_1.jpg" class="work__img-pic">
+										<div class="work-logo--big">
+											<div style="background-image: url(../img/portfolio/works_logo_1.png)" class="work-logo__img--big"><img src="./img/portfolio/works_logo_1.png" class="work-logo__img-pic--big"></div>
+										</div>
+									</div></a></div>
+							<div class="work__right">
+								<ul class="work__list">
+									<li class="work__item"><a href="#" class="work__link">
+											<div style="background-image: url(../img/portfolio/works_2.jpg)" class="work__img"><img src="./img/portfolio/works_2.jpg" class="work__img-pic">
+												<div class="work-logo">
+													<div style="background-image: url(../img/portfolio/works_logo_2.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_2.png" class="work-logo__img-pic"></div>
+												</div>
+											</div></a></li>
+									<li class="work__item"><a href="#" class="work__link">
+											<div style="background-image: url(../img/portfolio/works_3.jpg)" class="work__img"><img src="./img/portfolio/works_3.jpg" class="work__img-pic">
+												<div class="work-logo">
+													<div style="background-image: url(../img/portfolio/works_logo_3.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_3.png" class="work-logo__img-pic"></div>
+												</div>
+											</div></a></li>
+									<li class="work__item"><a href="#" class="work__link">
+											<div style="background-image: url(../img/portfolio/works_4.jpg)" class="work__img"><img src="./img/portfolio/works_4.jpg" class="work__img-pic">
+												<div class="work-logo">
+													<div style="background-image: url(../img/portfolio/works_logo_4.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_4.png" class="work-logo__img-pic"></div>
+												</div>
+											</div></a></li>
+									<li class="work__item"><a href="#" class="work__link">
+											<div style="background-image: url(../img/portfolio/works_5.jpg)" class="work__img"><img src="./img/portfolio/works_5.jpg" class="work__img-pic">
+												<div class="work-logo">
+													<div style="background-image: url(../img/portfolio/works_logo_5.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_5.png" class="work-logo__img-pic"></div>
+												</div>
+											</div></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="portfolio__work-pagination work-pagination">
+							<ul class="work-pagination__list">
+								<li class="work-pagination__item"><a href="#" class="work-pagination__link"></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="portfolio">
-					<div class="portfolio__podcast">
-						<div class="portfolio__podcast-left"></div>
-						<div class="portfolio__podcast-right"></div>
+					<div class="portfolio__contacts">
+						<div class="container-inner">
+							<div class="portfolio__contacts-left">
+								<div class="inner__title">Свяжитесь с нами</div>
+								<div class="inner__title">Блок с контактами</div>
+								<div class="inner__title">Адрес</div>
+								<div class="inner__title">Почта</div>
+								<div class="inner__title">Телефон</div>
+							</div>
+							<div class="portfolio__contacts-right">
+								<div class="portfolio__contacts-form contacts-form">
+									<div class="popup__title contacts-form__title">Форма для связи</div>
+									<form class="popup__form">
+										<div class="popup__label-wrapp">
+											<div class="popup__label">
+												<input id="name" type="text" placeholder="Имя" class="input input--transparent">
+												<label for="name" class="label">Имя</label>
+											</div>
+											<div class="popup__label">
+												<input id="company" type="text" placeholder="Компания" class="input input--transparent">
+												<label for="company" class="label">Компания</label>
+											</div>
+											<div class="popup__label">
+												<input id="email" type="text" placeholder="E-mail" class="input input--transparent">
+												<label for="email" class="label">E-mail</label>
+											</div>
+											<div class="popup__label">
+												<input id="phone" type="text" placeholder="Телефон" class="input input--transparent">
+												<label for="phone" class="label">Телефон</label>
+											</div>
+											<div class="popup__label">
+												<input id="phone" type="text" placeholder="Опишите особенности вашего проекта" class="input input--transparent">
+												<label for="phone" class="label">Комментарий</label>
+											</div>
+										</div>
+										<div class="popup__download">
+											<div class="popup__download-fake">
+												<input type="text" disabled class="input__download-fake">
+												<div class="text__download-fake">Перетяните файл сюда или</div>
+												<button class="button__download-fake">Выберите</button>
+											</div>
+											<input type="file" multiple class="input__download input--transparent">
+										</div>
+										<div class="popup__btns"></div>
+									</form>
+									<input type="submit" value="Отправить на оценку" class="popup__submit">
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="portfolio__contacts"></div>
 				</div>
 			</div>
 		</div>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__block">
-					<div class="footer__order"><a href="#" class="footer__order-link">Заказать оценку проекта</a></div>
-				</div>
-				<div class="footer__block footer__block--copyright">
-					<div class="copyright">@ 2016 Pixite</div>
-				</div>
-				<div class="footer__block">
-					<div class="footer__calculate"><a href="#" class="footer__calculate-link">Рассчитать стоимость</a></div>
-				</div>
-			</div>
-		</footer>
 		<div class="popup">
 			<div class="popup__close"><a href="#" class="popup__close-link">Закрыть</a></div>
 			<div class="popup__title">Заказать оценку проекта</div>

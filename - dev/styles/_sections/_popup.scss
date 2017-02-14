@@ -112,6 +112,11 @@
     color: #404040;
 }
 
+.input--transparent {
+	color: #fff;
+	background: transparent;
+}
+
 .input:focus + label {
     display: block;
 }

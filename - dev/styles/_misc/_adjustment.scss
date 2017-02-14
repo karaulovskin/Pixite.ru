@@ -137,6 +137,7 @@ a {	text-decoration: none;
 .container-inner {
 	width: 632px;
 	margin: 0 auto;
+	@extend %clearfix;
 }
 
 .maincontent {
