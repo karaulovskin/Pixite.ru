@@ -13,7 +13,7 @@ html
 
         meta(name='viewport' content='width=device-width')
         link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&subset=latin,cyrillic' media='screen, projection, print')
-        //- link(rel='stylesheet' type='text/css' href='js/vendor/mmenu/dist/css/jquery.mmenu.all.css' media='screen, projection, print')
+        link(rel='stylesheet' type='text/css' href='js/vendor/mmenu/dist/css/jquery.mmenu.all.css' media='screen, projection, print')
         script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
         link(rel='stylesheet' type='text/css' href='css/main.css' media='screen, projection, print')
         //- link(rel='stylesheet' type='text/css' href='js/vendor/mmenu/dist/css/jquery.mmenu.all.css' media='screen, projection, print')
@@ -32,8 +32,8 @@ html
                         //- .container
                         //-     .main
                         //-         block main
-        block footer
-        include _common/_popup
+            block footer
+        //- include _common/_popup
 
 script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
 script.
@@ -42,5 +42,5 @@ script.
 //- script(src='js/plugins/jquery/jquery.min.js')
 //- script(src='- dev/scripts/main.js')
 script(src='js/vendor/mmenu/dist/js/jquery.mmenu.all.min.js')
-script(src='- dev/scripts/main.js')
-//- script(src='js/main.min.js')
+//- script(src='- dev/scripts/main.js')
+script(src='js/main.min.js')

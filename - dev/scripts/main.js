@@ -220,20 +220,23 @@ $(document).ready(function(){
 		var
 			popup = $('.popup'),
 			close = $('.popup__close-link'),
-			order = $('.footer-order__link'),
-			overlay = $('.cube__overlay');
+			order = $('.footer__order-link'),
+			overlay = $('.popup__overlay');
 
-		$(order).click(function(){
+		$(order).click(function(e){
+			e.preventDefault();
 			$(popup).fadeIn();
 			$(overlay).fadeIn();
 		});
 		
-		$(close).click(function(){
+		$(close).click(function(e){
+			e.preventDefault();
 			$(popup).fadeOut();
 			$(overlay).fadeOut();
 		});
 
-		$(overlay).click(function(){
+		$(overlay).click(function(e){
+			e.preventDefault();
 			$(popup).fadeOut();
 			$(overlay).fadeOut();
 		});

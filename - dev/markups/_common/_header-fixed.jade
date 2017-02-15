@@ -2,7 +2,7 @@ header.header.header--fixed
 	.container
 		.header__menu
 			.logo
-				a(href="index.html").logo__link
+				a(href="/").logo__link
 					img(src="./img/logo.png").logo-pic
 					span.logo-text
 						| Веб-студия Пиксайт
@@ -12,8 +12,11 @@ header.header.header--fixed
 			.nav(id="mmenu")
 				ul.nav__list
 					li.nav__item
-						a(href="#").nav__link
+						a(href="competence.html").nav__link
 							| Компетенции
+					li.nav__item
+						a(href="portfolio.html").nav__link
+							| Портфолио
 					li.nav__item
 						a(href="#").nav__link
 							| Услуги
@@ -21,24 +24,24 @@ header.header.header--fixed
 							li.dropdown__item
 								a(href="#").dropdown__link
 									| Разработка сайтов
-								ul.dropdown__list
-									li.dropdown__item
-										a(href="#").dropdown__link
+								ul.dropdown-sub__list
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
 											| Корпоративный сайт
-									li.dropdown__item
-										a(href="#").dropdown__link
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
 											| Сайт для государственной организации
-									li.dropdown__item
-										a(href="#").dropdown__link
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
 											| Сайт для медицинской организации
-									li.dropdown__item
-										a(href="#").dropdown__link
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
 											| Интеграция с 1С
-									li.dropdown__item
-										a(href="#").dropdown__link
+									li.dropdown-sub__item
+										a(href="compozit.html").dropdown-sub__link
 											| Ускорение сайтов
-									li.dropdown__item
-										a(href="#").dropdown__link
+									li.dropdown-sub__item
+										a(href="#").dropdown-sub__link
 											| Адаптивный сайт
 							li.dropdown__item
 								a(href="#").dropdown__link
@@ -53,7 +56,10 @@ header.header.header--fixed
 						a(href="events.html").nav__link
 							| Мероприятия
 					li.nav__item
-						a(href="#").nav__link
+						a(href="events.html").nav__link
+							| Интернет-магазин
+					li.nav__item
+						a(href="contacts.html").nav__link
 							| Контакты
 		.header__user
 			.user

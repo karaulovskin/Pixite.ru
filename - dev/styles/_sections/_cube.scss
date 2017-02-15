@@ -271,7 +271,7 @@
 }
 
 .cube__list {
-	position: releative;
+	position: relative;
 	min-height: 490px;
 	font-size: 0;
 	
@@ -551,7 +551,8 @@
 	color: #404040;	
 }
 
-.cube__overlay {
+.cube__overlay,
+.popup__overlay {
 	display: none;
 	position: fixed;
     top: 0;

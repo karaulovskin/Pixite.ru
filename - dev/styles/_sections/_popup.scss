@@ -114,7 +114,7 @@
 
 .input--transparent {
 	color: #fff;
-	background: transparent;
+	background: transparent !important;
 }
 
 .input:focus + label {
@@ -181,6 +181,7 @@
 	font-size: rem(11px);
 	color: #c2c2c2;
 	background: transparent;
+	cursor: pointer;
 
 	@include phones {
 		top: 17px;

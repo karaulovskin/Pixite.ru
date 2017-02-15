@@ -10,6 +10,7 @@
 		<title>Контакты</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
+		<link rel="stylesheet" type="text/css" href="js/vendor/mmenu/dist/css/jquery.mmenu.all.css" media="screen, projection, print">
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
 	</head>
@@ -22,21 +23,22 @@
 				<header class="header header--fixed">
 					<div class="container">
 						<div class="header__menu">
-							<div class="logo"><a href="index.html" class="logo__link"><img src="./img/logo.png" class="logo-pic"><span class="logo-text">Веб-студия Пиксайт</span></a></div>
+							<div class="logo"><a href="/" class="logo__link"><img src="./img/logo.png" class="logo-pic"><span class="logo-text">Веб-студия Пиксайт</span></a></div>
 							<div class="nav__trigger"><a href="#mmenu" class="nav__trigger-link"><img src="./img/icons/hamburger.svg" class="nav__trigger-pic"></a></div>
 							<div id="mmenu" class="nav">
 								<ul class="nav__list">
-									<li class="nav__item"><a href="#" class="nav__link">Компетенции</a></li>
+									<li class="nav__item"><a href="competence.html" class="nav__link">Компетенции</a></li>
+									<li class="nav__item"><a href="portfolio.html" class="nav__link">Портфолио</a></li>
 									<li class="nav__item"><a href="#" class="nav__link">Услуги</a>
 										<ul class="dropdown__list">
 											<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка сайтов</a>
-												<ul class="dropdown__list">
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Корпоративный сайт</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Сайт для государственной организации</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Сайт для медицинской организации</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Интеграция с 1С</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Ускорение сайтов</a></li>
-													<li class="dropdown__item"><a href="#" class="dropdown__link">Адаптивный сайт</a></li>
+												<ul class="dropdown-sub__list">
+													<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Корпоративный сайт</a></li>
+													<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Сайт для государственной организации</a></li>
+													<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Сайт для медицинской организации</a></li>
+													<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Интеграция с 1С</a></li>
+													<li class="dropdown-sub__item"><a href="compozit.html" class="dropdown-sub__link">Ускорение сайтов</a></li>
+													<li class="dropdown-sub__item"><a href="#" class="dropdown-sub__link">Адаптивный сайт</a></li>
 												</ul>
 											</li>
 											<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка корпоративных порталов</a></li>
@@ -45,7 +47,8 @@
 										</ul>
 									</li>
 									<li class="nav__item"><a href="events.html" class="nav__link">Мероприятия</a></li>
-									<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+									<li class="nav__item"><a href="events.html" class="nav__link">Интернет-магазин</a></li>
+									<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
 								</ul>
 							</div>
 						</div>
@@ -56,59 +59,35 @@
 						</div>
 					</div>
 				</header>
+				<div class="contacts">
+					<div id="map" class="contacts__map"></div>
+					<div class="contacts__link-btns"><a href="#" class="contacts__link-contacts">Контакты</a></div>
+					<div class="contacts__map-overlay"></div>
+					<div class="contacts__location">
+						<div class="contacts__title">Контакты</div>
+						<div class="contacts__point point">
+							<div class="point__address"><span class="point__address-city">Челябинск,</span><span class="point__address-street">пр-кт Ленина, д.35, оф. 502</span></div>
+							<div class="point__phones">
+								<div class="point__phones-text">Телефон:</div><a href="tel:+73512102121" class="point__phones-link"><span class="point__phones-number">+7 351 210 21 21</span></a>
+							</div>
+							<div class="point__mail"><span>E-mail:</span><a href="mailto:bitrix@pixite.ru" class="point__mail-link">bitrix@pixite.ru</a></div><a href="#" class="point__link-map">Посмотреть карту</a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<footer class="footer footer--fixed">
-			<div class="container">
-				<div class="footer__block">
-					<div class="footer-order"><a href="#" class="footer-order__link">Заказать оценку проекта</a></div>
-				</div>
-				<div class="footer__block footer__block--copyright">
-					<div class="copyright">@ 2016 Pixite</div>
-				</div>
-				<div class="footer__block">
-					<div class="footer-calculate"><a href="#" class="footer-calculate__link">Рассчитать стоимость</a></div>
-				</div>
-			</div>
-		</footer>
-		<div class="popup">
-			<div class="popup__close"><a href="#" class="popup__close-link">Закрыть</a></div>
-			<div class="popup__title">Заказать оценку проекта</div>
-			<form class="popup__form">
-				<div class="popup__label-wrapp">
-					<div class="popup__label">
-						<input id="name" type="text" placeholder="Имя" class="input">
-						<label for="name" class="label">Имя</label>
+			<footer class="footer footer--fixed">
+				<div class="container">
+					<div class="footer__block">
+						<div class="footer__order"><a href="#" class="footer__order-link">Заказать оценку проекта</a></div>
 					</div>
-					<div class="popup__label">
-						<input id="company" type="text" placeholder="Компания" class="input">
-						<label for="company" class="label">Компания</label>
+					<div class="footer__block footer__block--copyright">
+						<div class="copyright">@ 2016 Pixite</div>
 					</div>
-					<div class="popup__label">
-						<input id="email" type="text" placeholder="E-mail" class="input">
-						<label for="email" class="label">E-mail</label>
-					</div>
-					<div class="popup__label">
-						<input id="phone" type="text" placeholder="Телефон" class="input">
-						<label for="phone" class="label">Телефон</label>
-					</div>
-					<div class="popup__label">
-						<input id="phone" type="text" placeholder="Опишите особенности вашего проекта" class="input">
-						<label for="phone" class="label">Комментарий</label>
+					<div class="footer__block">
+						<div class="footer__calculate"><a href="#" class="footer__calculate-link">Рассчитать стоимость</a></div>
 					</div>
 				</div>
-				<div class="popup__download">
-					<div class="popup__download-fake">
-						<input type="text" disabled class="input__download-fake">
-						<div class="text__download-fake">Перетяните файл сюда или</div>
-						<button class="button__download-fake">Выберите</button>
-					</div>
-					<input type="file" multiple class="input__download">
-				</div>
-				<div class="popup__btns">
-					<input type="submit" value="Отправить на оценку" class="popup__submit">
-				</div>
-			</form>
+			</footer>
 		</div>
 	</body>
 </html>
@@ -118,4 +97,4 @@
 	
 </script>
 <script src="js/vendor/mmenu/dist/js/jquery.mmenu.all.min.js"></script>
-<script src="- dev/scripts/main.js"></script>
+<script src="js/main.min.js"></script>

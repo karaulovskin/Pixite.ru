@@ -105,15 +105,15 @@ a {	text-decoration: none;
     min-height: 100%;
     overflow: hidden;
 	
-	&:after {
-		content: "";
-		display: block;
-		height: 74px;
+	// &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	height: 74px;
 
-		@include phones {
-		    height: 68px;
-		}
-	}
+	// 	@include phones {
+	// 	    height: 68px;
+	// 	}
+	// }
 }
 
 .footer {
@@ -142,6 +142,10 @@ a {	text-decoration: none;
 
 .maincontent {
 	// margin-bottom: 20px;
+}
+
+.color-white {
+	color: #fff !important;
 }
 
 

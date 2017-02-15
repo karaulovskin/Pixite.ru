@@ -21,14 +21,15 @@
 	.header-portfolio__work.work
 		.work__wrapp
 			.work__left
-				a.work__link--big(href="#")
-					.work__img--big(style="background-image: url(../img/portfolio/works_1.jpg)")
-						img.work__img-pic(src="./img/portfolio/works_1.jpg")
-						.work-logo--big
-							.work-logo__img--big(style="background-image: url(../img/portfolio/works_logo_1.png)")
-								img.work-logo__img-pic--big(src="./img/portfolio/works_logo_1.png")
-					//- .work__desc
-					//- 	p Интернет-магазин
+				.work__item--big
+					a.work__link--big(href="#")
+						.work__img--big(style="background-image: url(../img/portfolio/works_1.jpg)")
+							img.work__img-pic(src="./img/portfolio/works_1.jpg")
+							.work-logo--big
+								.work-logo__img--big(style="background-image: url(../img/portfolio/works_logo_1.png)")
+									img.work-logo__img-pic--big(src="./img/portfolio/works_logo_1.png")
+							.work__img-desc.work__img-desc--site Корпоративный сайт
+							
 			.work__right
 				ul.work__list
 					li.work__item
@@ -38,6 +39,9 @@
 								.work-logo
 									.work-logo__img(style="background-image: url(../img/portfolio/works_logo_2.png)")
 										img.work-logo__img-pic(src="./img/portfolio/works_logo_2.png")
+								.work__img-desc.work__img-desc--shop.work__img-desc--margin Интернет-магазины
+								.work__img-desc.work__img-desc--portal Корпоративные порталы Б24
+						
 					li.work__item
 						a.work__link(href="#")
 							.work__img(style="background-image: url(../img/portfolio/works_3.jpg)")
@@ -45,6 +49,8 @@
 								.work-logo
 									.work-logo__img(style="background-image: url(../img/portfolio/works_logo_3.png)")
 										img.work-logo__img-pic(src="./img/portfolio/works_logo_3.png")
+								.work__img-desc.work__img-desc--mobile Мобильные приложения
+							
 					li.work__item
 						a.work__link(href="#")
 							.work__img(style="background-image: url(../img/portfolio/works_4.jpg)")
@@ -52,6 +58,7 @@
 								.work-logo
 									.work-logo__img(style="background-image: url(../img/portfolio/works_logo_4.png)")
 										img.work-logo__img-pic(src="./img/portfolio/works_logo_4.png")
+							.work__img-overlay
 					li.work__item
 						a.work__link(href="#")
 							.work__img(style="background-image: url(../img/portfolio/works_5.jpg)")
@@ -59,10 +66,89 @@
 								.work-logo
 									.work-logo__img(style="background-image: url(../img/portfolio/works_logo_5.png)")
 										img.work-logo__img-pic(src="./img/portfolio/works_logo_5.png")
+						
+.work-add
+	.work__wrapp-bottom
+		ul.work__list
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_2.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_2.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_2.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_2.png")
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_3.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_3.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_3.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_3.png")
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_4.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_4.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_4.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_4.png")
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_5.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_5.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_5.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_5.png")
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_2.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_2.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_2.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_2.png")
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_3.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_3.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_3.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_3.png")
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_4.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_4.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_4.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_4.png")
+			li.work__item.work__item-bottom
+				a.work__link(href="#")
+					.work__img(style="background-image: url(../img/portfolio/works_5.jpg)")
+						img.work__img-pic(src="./img/portfolio/works_5.jpg")
+						.work-logo
+							.work-logo__img(style="background-image: url(../img/portfolio/works_logo_5.png)")
+								img.work-logo__img-pic(src="./img/portfolio/works_logo_5.png")
 		.portfolio__work-pagination.work-pagination
-			ul.work-pagination__list
-				li.work-pagination__item
-					a.work-pagination__link(href="#")
+	ul.work-pagination__list
+		li.work-pagination__item.work-pagination__item--prev
+			a.work-pagination__link.work-pagination__link--prev(href="#") Назад
+		li.work-pagination__item.active
+			a.work-pagination__link(href="#") 1
+		li.work-pagination__item
+			a.work-pagination__link(href="#") 2
+		li.work-pagination__item
+			a.work-pagination__link(href="#") 3
+		li.work-pagination__item
+			a.work-pagination__link(href="#") 4
+		li.work-pagination__item
+			a.work-pagination__link(href="#") 5
+		li.work-pagination__item.work-pagination__item--period
+			a.work-pagination__link.work-pagination__link--period(href="#") ...
+		li.work-pagination__item
+			a.work-pagination__link(href="#") 24
+		li.work-pagination__item
+			a.work-pagination__link(href="#") 25
+		li.work-pagination__item.work-pagination__item--next
+			a.work-pagination__link.work-pagination__link--next(href="#") Вперед
+
 
 
 
