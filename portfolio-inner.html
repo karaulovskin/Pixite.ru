@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
 		<link rel="stylesheet" type="text/css" href="js/vendor/mmenu/dist/css/jquery.mmenu.all.css" media="screen, projection, print">
+		<link rel="stylesheet" type="text/css" href="js/vendor/slick/bxslider.css">
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
 	</head>
@@ -20,7 +21,7 @@
 		<![endif]-->
 		<div class="wrapper">
 			<div class="maincontent">
-				<div class="header-portfolio">
+				<div class="header-portfolio-inner">
 					<header class="header">
 						<div class="container">
 							<div class="header__menu">
@@ -60,183 +61,86 @@
 							</div>
 						</div>
 					</header>
-					<div class="header-portfolio__bottom">
-						<nav class="nav-portfolio__bottom">
-							<ul class="nav-portfolio__list">
-								<li class="nav-portfolio__item current"><a href="#" class="nav-portfolio__link">Все</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Корпоративные сайты</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Интернет-магазины</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Корпоративные порталы Б24</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Мобильные приложения</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="header-portfolio__work work">
-						<div class="work__wrapp">
-							<div class="work__left">
-								<div class="work__item--big"><a href="#" class="work__link--big">
-										<div style="background-image: url(../img/portfolio/works_1.jpg)" class="work__img--big"><img src="./img/portfolio/works_1.jpg" class="work__img-pic">
-											<div class="work-logo--big">
-												<div style="background-image: url(../img/portfolio/works_logo_1.png)" class="work-logo__img--big"><img src="./img/portfolio/works_logo_1.png" class="work-logo__img-pic--big"></div>
-											</div>
-											<div class="work__img-desc work__img-desc--site">Корпоративный сайт</div>
-										</div></a></div>
-							</div>
-							<div class="work__right">
-								<ul class="work__list">
-									<li class="work__item"><a href="#" class="work__link">
-											<div style="background-image: url(../img/portfolio/works_2.jpg)" class="work__img"><img src="./img/portfolio/works_2.jpg" class="work__img-pic">
-												<div class="work-logo">
-													<div style="background-image: url(../img/portfolio/works_logo_2.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_2.png" class="work-logo__img-pic"></div>
-												</div>
-												<div class="work__img-desc work__img-desc--shop work__img-desc--margin">Интернет-магазины</div>
-												<div class="work__img-desc work__img-desc--portal">Корпоративные порталы Б24</div>
-											</div></a></li>
-									<li class="work__item"><a href="#" class="work__link">
-											<div style="background-image: url(../img/portfolio/works_3.jpg)" class="work__img"><img src="./img/portfolio/works_3.jpg" class="work__img-pic">
-												<div class="work-logo">
-													<div style="background-image: url(../img/portfolio/works_logo_3.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_3.png" class="work-logo__img-pic"></div>
-												</div>
-												<div class="work__img-desc work__img-desc--mobile">Мобильные приложения</div>
-											</div></a></li>
-									<li class="work__item"><a href="#" class="work__link">
-											<div style="background-image: url(../img/portfolio/works_4.jpg)" class="work__img"><img src="./img/portfolio/works_4.jpg" class="work__img-pic">
-												<div class="work-logo">
-													<div style="background-image: url(../img/portfolio/works_logo_4.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_4.png" class="work-logo__img-pic"></div>
-												</div>
-											</div>
-											<div class="work__img-overlay"></div></a></li>
-									<li class="work__item"><a href="#" class="work__link">
-											<div style="background-image: url(../img/portfolio/works_5.jpg)" class="work__img"><img src="./img/portfolio/works_5.jpg" class="work__img-pic">
-												<div class="work-logo">
-													<div style="background-image: url(../img/portfolio/works_logo_5.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_5.png" class="work-logo__img-pic"></div>
-												</div>
-											</div></a></li>
-								</ul>
+					<div class="header-inner__wrapper">
+						<div class="header-inner__title align-left">
+							<div class="container-inner">
+								<div class="header-inner__title-big margin-bottom">Союз-Игрушка</div>
+								<div class="header-inner__title-left">
+									<div class="inner__title">Заказчик</div>
+									<div class="inner__text">
+										<p>Оптовый интернет-магазин крупнейшей компании в Уральском округе.</p>
+									</div>
+									<div class="inner__title">Задача</div>
+									<div class="inner__text margin-bottom-none">
+										<p>Новый дизайн с учетом современных тенденций в дизайне и разработке интернет проектов.</p>
+									</div>
+								</div>
+								<div class="header-inner__title-right">
+									<div class="inner__title">Работы</div>
+									<ul class="portfolio__list">
+										<li class="portfolio__item">
+											<p>Редизайн сайта на платформе 1С-Битрикс.</p>
+										</li>
+										<li class="portfolio__item">
+											<p>Внедрение дополнительного функционала.</p>
+										</li>
+										<li class="portfolio__item">
+											<p>Интеграция с 1С, адаптивная верстка</p>
+										</li>
+										<li class="portfolio__item">
+											<p>Редизайн сайта на платформе 1С-Битрикс.</p>
+										</li>
+										<li class="portfolio__item">
+											<p>Внедрение дополнительного функционала.</p>
+										</li>
+										<li class="portfolio__item">
+											<p>Интеграция с 1С, адаптивная верстка</p>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="work-add">
-					<div class="work__wrapp-bottom">
-						<ul class="work__list">
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_2.jpg)" class="work__img"><img src="./img/portfolio/works_2.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_2.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_2.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_3.jpg)" class="work__img"><img src="./img/portfolio/works_3.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_3.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_3.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_4.jpg)" class="work__img"><img src="./img/portfolio/works_4.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_4.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_4.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_5.jpg)" class="work__img"><img src="./img/portfolio/works_5.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_5.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_5.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_2.jpg)" class="work__img"><img src="./img/portfolio/works_2.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_2.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_2.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_3.jpg)" class="work__img"><img src="./img/portfolio/works_3.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_3.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_3.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_4.jpg)" class="work__img"><img src="./img/portfolio/works_4.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_4.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_4.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-							<li class="work__item work__item-bottom"><a href="#" class="work__link">
-									<div style="background-image: url(../img/portfolio/works_5.jpg)" class="work__img"><img src="./img/portfolio/works_5.jpg" class="work__img-pic">
-										<div class="work-logo">
-											<div style="background-image: url(../img/portfolio/works_logo_5.png)" class="work-logo__img"><img src="./img/portfolio/works_logo_5.png" class="work-logo__img-pic"></div>
-										</div>
-									</div></a></li>
-						</ul>
-						<div class="portfolio__work-pagination work-pagination"></div>
+					<div class="triangel"></div>
+					<div class="macbook">
+						<div class="slider">
+							<ul class="slider__list">
+								<li class="slider__item">
+									<div style="background-image: url(/img/slider/slider_1.jpg);" class="slider__img"><img src="./img/slider/slider_1.jpg" class="slider__img-pic"></div>
+								</li>
+								<li class="slider__item">
+									<div style="background-image: url(/img/slider/slider_1.jpg);" class="slider__img"><img src="./img/slider/slider_1.jpg" class="slider__img-pic"></div>
+								</li>
+								<li class="slider__item">
+									<div style="background-image: url(/img/slider/slider_1.jpg);" class="slider__img"><img src="./img/slider/slider_1.jpg" class="slider__img-pic"></div>
+								</li>
+								<li class="slider__item">
+									<div style="background-image: url(/img/slider/slider_1.jpg);" class="slider__img"><img src="./img/slider/slider_1.jpg" class="slider__img-pic"></div>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<ul class="work-pagination__list">
-						<li class="work-pagination__item work-pagination__item--prev"><a href="#" class="work-pagination__link work-pagination__link--prev">Назад</a></li>
-						<li class="work-pagination__item active"><a href="#" class="work-pagination__link">1</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">2</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">3</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">4</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">5</a></li>
-						<li class="work-pagination__item work-pagination__item--period"><a href="#" class="work-pagination__link work-pagination__link--period">...</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">24</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">25</a></li>
-						<li class="work-pagination__item work-pagination__item--next"><a href="#" class="work-pagination__link work-pagination__link--next">Вперед</a></li>
-					</ul>
 				</div>
 				<div class="inner">
 					<div class="container-inner">
-						<div class="portfolio">
-							<div class="portfolio__contacts">
-								<div class="container-inner">
-									<div class="portfolio__contacts-left">
-										<div class="inner__title">Свяжитесь с нами</div>
-										<div class="inner__title">Блок с контактами</div>
-										<div class="inner__title">Адрес</div>
-										<div class="inner__title">Почта</div>
-										<div class="inner__title">Телефон</div>
-									</div>
-									<div class="portfolio__contacts-right">
-										<div class="portfolio__contacts-form contacts-form">
-											<div class="popup__title contacts-form__title">Форма для связи</div>
-											<form class="popup__form">
-												<div class="popup__label-wrapp">
-													<div class="popup__label">
-														<input id="name" type="text" placeholder="Имя" class="input input--transparent">
-														<label for="name" class="label">Имя</label>
-													</div>
-													<div class="popup__label">
-														<input id="company" type="text" placeholder="Компания" class="input input--transparent">
-														<label for="company" class="label">Компания</label>
-													</div>
-													<div class="popup__label">
-														<input id="email" type="text" placeholder="E-mail" class="input input--transparent">
-														<label for="email" class="label">E-mail</label>
-													</div>
-													<div class="popup__label">
-														<input id="phone" type="text" placeholder="Телефон" class="input input--transparent">
-														<label for="phone" class="label">Телефон</label>
-													</div>
-													<div class="popup__label">
-														<input id="phone" type="text" placeholder="Опишите особенности вашего проекта" class="input input--transparent">
-														<label for="phone" class="label">Комментарий</label>
-													</div>
-												</div>
-												<div class="popup__download">
-													<div class="popup__download-fake">
-														<input type="text" disabled class="input__download-fake input--transparent">
-														<div class="text__download-fake color-white">Перетяните файл сюда или</div>
-														<button class="button__download-fake color-white">Выберите</button>
-													</div>
-													<input type="file" multiple class="input__download">
-												</div>
-												<div class="popup__btns"></div>
-											</form>
-											<input type="submit" value="Отправить на оценку" class="popup__submit">
-										</div>
-									</div>
-								</div>
+						<div class="portfolio-inner">
+							<div class="inner__title">
+								 
+								Высоконагруженный интернет-ресурс
 							</div>
+							<div class="inner__text">
+								<p>Интернет-магазин содержит 9 каталогов, более 30 тысяч позиций товаров, количество пользователей зарегистрированных на сайте превысило отметку 5 тыс.</p>
+							</div>
+							<div class="inner__title">
+								 
+								Успешно работает на платформе 1С-Битрикс
+							</div>
+							<div class="inner__text">
+								<p>Интернет-магазин интегрирован с 1С в части каталога и заказов.</p>
+								<p>Сайт имеет индивидуальный функционал в личном кабинете пользователей, а именно: каждый пользователь имеет прикрепленного персонального менеджера, который назначается в системе 1С и выгружается на сайт, внедрен механизм договоров в личном кабинете пользователя.</p>
+								<p>Реализована возможность заключать договора онлайн, и в зависимотси от выбранного договора отображается цена товаров и условия доставки.</p>
+							</div>
+							<div class="compozit__btns"><a href="#" class="compozit__btn">Хочу токой же!</a></div>
 						</div>
 					</div>
 				</div>
@@ -255,6 +159,46 @@
 				</div>
 			</footer>
 		</div>
+		<div class="popup">
+			<div class="popup__close"><a href="#" class="popup__close-link">Закрыть</a></div>
+			<div class="popup__title">Заказать оценку проекта</div>
+			<form class="popup__form">
+				<div class="popup__label-wrapp">
+					<div class="popup__label">
+						<input id="name" type="text" placeholder="Имя" class="input">
+						<label for="name" class="label">Имя</label>
+					</div>
+					<div class="popup__label">
+						<input id="company" type="text" placeholder="Компания" class="input">
+						<label for="company" class="label">Компания</label>
+					</div>
+					<div class="popup__label">
+						<input id="email" type="text" placeholder="E-mail" class="input">
+						<label for="email" class="label">E-mail</label>
+					</div>
+					<div class="popup__label">
+						<input id="phone" type="text" placeholder="Телефон" class="input">
+						<label for="phone" class="label">Телефон</label>
+					</div>
+					<div class="popup__label">
+						<input id="phone" type="text" placeholder="Опишите особенности вашего проекта" class="input">
+						<label for="phone" class="label">Комментарий</label>
+					</div>
+				</div>
+				<div class="popup__download">
+					<div class="popup__download-fake">
+						<input type="text" disabled class="input__download-fake">
+						<div class="text__download-fake">Перетяните файл сюда или</div>
+						<button class="button__download-fake">Выберите</button>
+					</div>
+					<input type="file" multiple class="input__download">
+				</div>
+				<div class="popup__btns">
+					<input type="submit" value="Отправить на оценку" class="popup__submit">
+				</div>
+			</form>
+		</div>
+		<div class="popup__overlay"></div>
 	</body>
 </html>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -263,4 +207,5 @@
 	
 </script>
 <script src="js/vendor/mmenu/dist/js/jquery.mmenu.all.min.js"></script>
+<script src="js/vendor/slick/bxslider.min.js"></script>
 <script src="js/main.min.js"></script>

@@ -47,6 +47,7 @@
 .inner__text {
 	p {
 		margin-bottom: 20px;
+		text-transform: none;
 		font-size: 13px;
 
 		@include phones {

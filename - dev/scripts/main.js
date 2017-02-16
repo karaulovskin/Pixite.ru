@@ -39,7 +39,22 @@ $(document).ready(function(){
 	}());
 
 
+	// SLIDER
 
+	// (function(){
+
+	// 	$('.slider__list').slick({
+	// 		dots: true,
+	// 		accessibility: false
+	// 	});
+
+	// }());
+
+	(function(){
+
+		$('.slider__list').bxSlider();
+
+	}());
 
 
 

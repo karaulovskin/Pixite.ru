@@ -116,8 +116,9 @@
 .speed__img-pic {
 	display: block;
 	max-width: 100%;
+	margin: 0 auto;
 
-	@include tablets {
-		margin: 0 auto;
-	}
+	// @include tablets {
+	// 	margin: 0 auto;
+	// }
 }

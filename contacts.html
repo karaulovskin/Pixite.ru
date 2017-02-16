@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
 		<link rel="stylesheet" type="text/css" href="js/vendor/mmenu/dist/css/jquery.mmenu.all.css" media="screen, projection, print">
+		<link rel="stylesheet" type="text/css" href="js/vendor/slick/bxslider.css">
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
 	</head>
@@ -89,6 +90,46 @@
 				</div>
 			</footer>
 		</div>
+		<div class="popup">
+			<div class="popup__close"><a href="#" class="popup__close-link">Закрыть</a></div>
+			<div class="popup__title">Заказать оценку проекта</div>
+			<form class="popup__form">
+				<div class="popup__label-wrapp">
+					<div class="popup__label">
+						<input id="name" type="text" placeholder="Имя" class="input">
+						<label for="name" class="label">Имя</label>
+					</div>
+					<div class="popup__label">
+						<input id="company" type="text" placeholder="Компания" class="input">
+						<label for="company" class="label">Компания</label>
+					</div>
+					<div class="popup__label">
+						<input id="email" type="text" placeholder="E-mail" class="input">
+						<label for="email" class="label">E-mail</label>
+					</div>
+					<div class="popup__label">
+						<input id="phone" type="text" placeholder="Телефон" class="input">
+						<label for="phone" class="label">Телефон</label>
+					</div>
+					<div class="popup__label">
+						<input id="phone" type="text" placeholder="Опишите особенности вашего проекта" class="input">
+						<label for="phone" class="label">Комментарий</label>
+					</div>
+				</div>
+				<div class="popup__download">
+					<div class="popup__download-fake">
+						<input type="text" disabled class="input__download-fake">
+						<div class="text__download-fake">Перетяните файл сюда или</div>
+						<button class="button__download-fake">Выберите</button>
+					</div>
+					<input type="file" multiple class="input__download">
+				</div>
+				<div class="popup__btns">
+					<input type="submit" value="Отправить на оценку" class="popup__submit">
+				</div>
+			</form>
+		</div>
+		<div class="popup__overlay"></div>
 	</body>
 </html>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -97,4 +138,5 @@
 	
 </script>
 <script src="js/vendor/mmenu/dist/js/jquery.mmenu.all.min.js"></script>
+<script src="js/vendor/slick/bxslider.min.js"></script>
 <script src="js/main.min.js"></script>
