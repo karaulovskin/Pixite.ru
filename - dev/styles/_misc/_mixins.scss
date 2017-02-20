@@ -137,4 +137,30 @@
 	}
 }
 
+/*--------------------- handheld ----------------------*/
+
+@mixin desktop-handheld {
+	@media handheld and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop-handheld {
+	@media handheld and (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin tablets-handheld {
+	@media handheld and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phones-handheld {
+	@media handheld and (max-width: 480px) {
+		@content;
+	}
+}
+
 

@@ -273,20 +273,64 @@
 
 /* ------------------ HEADER-PORTFOLIO --------------------- */
 
-.header-portfolio {
+.header-section {
 	background: #3b4245;
 }
 
 .header-portfolio__bottom {
 	height: 74px;
-	padding: 30px 0px;
+	padding: 25px 0px 30px;
 	background: #fff;
 }
 
-.nav-portfolio__bottom {
-	width: 55%;
-    margin: 0 auto;
+.bottom-nav {
+	@extend %clearfix;
 }
+
+.bottom-nav__left,
+.bottom-nav__right {
+	float: left;
+}
+
+.bottom-nav__left {
+	width: 20%;
+}
+
+.bottom-nav__right{
+	width: 80%;
+}
+
+.nav-portfolio__bottom {
+	width: 74%;
+    margin: 5px auto 0;
+
+    @include laptop {
+        width: 100%;
+	}
+
+	@include tablets {
+        display: none;
+	}
+}
+
+.nav-portfolio__bottom {
+	width: 100%;
+    margin: 5px auto 0;
+
+    @include laptop {
+        display: none;
+	}
+
+	@include tablets {
+        display: none;
+	}
+}
+
+// @media screen and (max-width: 992px) {
+// 	.nav-portfolio__bottom {
+// 		width: 70%;
+// 	}
+// }
 
 .nav-portfolio__list {
 	text-align: justify;

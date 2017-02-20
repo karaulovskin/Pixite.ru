@@ -7,6 +7,14 @@ block header
 block content
     .inner
         .container-inner
+            .breadcrumbs
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Мероприятия
+                    li.breadcrumbs__item.current
+                        a.breadcrumbs__link Внутренняя
             include ../_common/_events-inner
 block footer 
     include ../_common/_footer-inner

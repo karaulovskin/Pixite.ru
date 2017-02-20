@@ -19,6 +19,19 @@ body {
 	background: url(../img/bg.jpg)fixed center center no-repeat;
 	background-size: cover;
 	background-color: #06141c;
+
+	@include desktop {
+		font-size: 16px;
+	}
+	@include laptop {
+		font-size: 15px;
+	}
+	@include tablets {
+		font-size: 14px;
+	}
+	@include phones {
+		font-size: 13px;
+	}
 }
 
 table {
@@ -142,6 +155,15 @@ a {	text-decoration: none;
 
 .maincontent {
 	// margin-bottom: 20px;
+	// &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	height: 74px;
+
+	// 	@include phones {
+	// 	    height: 68px;
+	// 	}
+	// }
 }
 
 .color-white {
@@ -168,6 +190,10 @@ a {	text-decoration: none;
 	p {
 		margin-bottom: 0!important;
 	}
+}
+
+.height-vh {
+	height: 100vh!important;
 }
 
 

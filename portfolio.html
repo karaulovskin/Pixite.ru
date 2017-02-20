@@ -21,7 +21,7 @@
 		<![endif]-->
 		<div class="wrapper">
 			<div class="maincontent">
-				<div class="header-portfolio">
+				<div class="header-section">
 					<header class="header">
 						<div class="container">
 							<div class="header__menu">
@@ -30,7 +30,15 @@
 								<div id="mmenu" class="nav">
 									<ul class="nav__list">
 										<li class="nav__item"><a href="competence.html" class="nav__link">Компетенции</a></li>
-										<li class="nav__item"><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+										<li class="nav__item"><a href="portfolio.html" class="nav__link">Портфолио</a>
+											<ul class="dropdown__list">
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Все</a></li>
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Корпоративные сайты</a></li>
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Интернет-магазины</a></li>
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Корпоративные порталы Б24</a></li>
+												<li class="dropdown__item"><a href="#" class="dropdown__link">Мобильные приложения</a></li>
+											</ul>
+										</li>
 										<li class="nav__item"><a href="#" class="nav__link">Услуги</a>
 											<ul class="dropdown__list">
 												<li class="dropdown__item"><a href="#" class="dropdown__link">Разработка сайтов</a>
@@ -62,15 +70,29 @@
 						</div>
 					</header>
 					<div class="header-portfolio__bottom">
-						<nav class="nav-portfolio__bottom">
-							<ul class="nav-portfolio__list">
-								<li class="nav-portfolio__item current"><a href="#" class="nav-portfolio__link">Все</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Корпоративные сайты</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Интернет-магазины</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Корпоративные порталы Б24</a></li>
-								<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Мобильные приложения</a></li>
-							</ul>
-						</nav>
+						<div class="container">
+							<div class="header-portfolio__bottom-nav bottom-nav">
+								<div class="bottom-nav__left">
+									<div class="breadcrumbs">
+										<ul class="breadcrumbs__list">
+											<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+											<li class="breadcrumbs__item current"><a class="breadcrumbs__link">Портфолио</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="bottom-nav__right">
+									<nav class="nav-portfolio__bottom">
+										<ul class="nav-portfolio__list">
+											<li class="nav-portfolio__item current"><a href="#" class="nav-portfolio__link">Все</a></li>
+											<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Корпоративные сайты</a></li>
+											<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Интернет-магазины</a></li>
+											<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Корпоративные порталы Б24</a></li>
+											<li class="nav-portfolio__item"><a href="#" class="nav-portfolio__link">Мобильные приложения</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="header-portfolio__work work">
 						<div class="work__wrapp">
@@ -182,30 +204,35 @@
 									</div>
 									<div class="work__img-overlay"></div></a></li>
 						</ul>
-						<div class="portfolio__work-pagination work-pagination"></div>
+						<div class="portfolio__work-pagination work-pagination">
+							<div class="container">
+								<ul class="work-pagination__list">
+									<li class="work-pagination__item work-pagination__item--prev"><a href="#" class="work-pagination__link work-pagination__link--prev">Назад</a></li>
+									<li class="work-pagination__item active"><a href="#" class="work-pagination__link">1</a></li>
+									<li class="work-pagination__item"><a href="#" class="work-pagination__link">2</a></li>
+									<li class="work-pagination__item"><a href="#" class="work-pagination__link">3</a></li>
+									<li class="work-pagination__item"><a href="#" class="work-pagination__link">4</a></li>
+									<li class="work-pagination__item"><a href="#" class="work-pagination__link">5</a></li>
+									<li class="work-pagination__item work-pagination__item--period"><a href="#" class="work-pagination__link work-pagination__link--period">...</a></li>
+									<li class="work-pagination__item"><a href="#" class="work-pagination__link">24</a></li>
+									<li class="work-pagination__item"><a href="#" class="work-pagination__link">25</a></li>
+									<li class="work-pagination__item work-pagination__item--next"><a href="#" class="work-pagination__link work-pagination__link--next">Вперед</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<ul class="work-pagination__list">
-						<li class="work-pagination__item work-pagination__item--prev"><a href="#" class="work-pagination__link work-pagination__link--prev">Назад</a></li>
-						<li class="work-pagination__item active"><a href="#" class="work-pagination__link">1</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">2</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">3</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">4</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">5</a></li>
-						<li class="work-pagination__item work-pagination__item--period"><a href="#" class="work-pagination__link work-pagination__link--period">...</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">24</a></li>
-						<li class="work-pagination__item"><a href="#" class="work-pagination__link">25</a></li>
-						<li class="work-pagination__item work-pagination__item--next"><a href="#" class="work-pagination__link work-pagination__link--next">Вперед</a></li>
-					</ul>
 				</div>
 				<div class="portfolio">
 					<div class="portfolio__contacts">
 						<div class="container-inner">
 							<div class="portfolio__contacts-left">
-								<div class="inner__title">Свяжитесь с нами</div>
-								<div class="inner__title">Блок с контактами</div>
-								<div class="inner__title">Адрес</div>
-								<div class="inner__title">Почта</div>
-								<div class="inner__title">Телефон</div>
+								<div class="portfolio__contacts-block">
+									<div class="inner__title">Свяжитесь с нами</div>
+									<div class="inner__title">Блок с контактами</div>
+									<div class="inner__title">Адрес</div>
+									<div class="inner__title">Почта</div>
+									<div class="inner__title">Телефон</div>
+								</div>
 							</div>
 							<div class="portfolio__contacts-right">
 								<div class="portfolio__contacts-form contacts-form">

@@ -1,23 +1,33 @@
-.header-portfolio
+.header-section
 	include _header
 	.header-portfolio__bottom
-		nav.nav-portfolio__bottom
-			ul.nav-portfolio__list
-				li.nav-portfolio__item.current
-					a.nav-portfolio__link(href="#")
-						| Все
-				li.nav-portfolio__item
-					a.nav-portfolio__link(href="#")
-						| Корпоративные сайты
-				li.nav-portfolio__item
-					a.nav-portfolio__link(href="#")
-						| Интернет-магазины
-				li.nav-portfolio__item
-					a.nav-portfolio__link(href="#")
-						| Корпоративные порталы Б24
-				li.nav-portfolio__item
-					a.nav-portfolio__link(href="#")
-						| Мобильные приложения
+		.container
+			.header-portfolio__bottom-nav.bottom-nav
+				.bottom-nav__left
+					.breadcrumbs
+						ul.breadcrumbs__list
+							li.breadcrumbs__item
+								a.breadcrumbs__link(href="#") Главная
+							li.breadcrumbs__item.current
+								a.breadcrumbs__link Портфолио
+				.bottom-nav__right
+					nav.nav-portfolio__bottom
+						ul.nav-portfolio__list
+							li.nav-portfolio__item.current
+								a.nav-portfolio__link(href="#")
+									| Все
+							li.nav-portfolio__item
+								a.nav-portfolio__link(href="#")
+									| Корпоративные сайты
+							li.nav-portfolio__item
+								a.nav-portfolio__link(href="#")
+									| Интернет-магазины
+							li.nav-portfolio__item
+								a.nav-portfolio__link(href="#")
+									| Корпоративные порталы Б24
+							li.nav-portfolio__item
+								a.nav-portfolio__link(href="#")
+									| Мобильные приложения
 	.header-portfolio__work.work
 		.work__wrapp
 			.work__left
@@ -135,27 +145,28 @@
 								img.work-logo__img-pic(src="./img/portfolio/works_logo_5.png")
 					.work__img-overlay
 		.portfolio__work-pagination.work-pagination
-	ul.work-pagination__list
-		li.work-pagination__item.work-pagination__item--prev
-			a.work-pagination__link.work-pagination__link--prev(href="#") Назад
-		li.work-pagination__item.active
-			a.work-pagination__link(href="#") 1
-		li.work-pagination__item
-			a.work-pagination__link(href="#") 2
-		li.work-pagination__item
-			a.work-pagination__link(href="#") 3
-		li.work-pagination__item
-			a.work-pagination__link(href="#") 4
-		li.work-pagination__item
-			a.work-pagination__link(href="#") 5
-		li.work-pagination__item.work-pagination__item--period
-			a.work-pagination__link.work-pagination__link--period(href="#") ...
-		li.work-pagination__item
-			a.work-pagination__link(href="#") 24
-		li.work-pagination__item
-			a.work-pagination__link(href="#") 25
-		li.work-pagination__item.work-pagination__item--next
-			a.work-pagination__link.work-pagination__link--next(href="#") Вперед
+			.container
+				ul.work-pagination__list
+					li.work-pagination__item.work-pagination__item--prev
+						a.work-pagination__link.work-pagination__link--prev(href="#") Назад
+					li.work-pagination__item.active
+						a.work-pagination__link(href="#") 1
+					li.work-pagination__item
+						a.work-pagination__link(href="#") 2
+					li.work-pagination__item
+						a.work-pagination__link(href="#") 3
+					li.work-pagination__item
+						a.work-pagination__link(href="#") 4
+					li.work-pagination__item
+						a.work-pagination__link(href="#") 5
+					li.work-pagination__item.work-pagination__item--period
+						a.work-pagination__link.work-pagination__link--period(href="#") ...
+					li.work-pagination__item
+						a.work-pagination__link(href="#") 24
+					li.work-pagination__item
+						a.work-pagination__link(href="#") 25
+					li.work-pagination__item.work-pagination__item--next
+						a.work-pagination__link.work-pagination__link--next(href="#") Вперед
 
 
 

@@ -18,7 +18,7 @@
 
 .header__menu {
 	float: left;
-	width: 78%;
+	width: 82%;
 
 	@include phones {
 		width: 100%;
@@ -35,7 +35,7 @@
 
 .logo {
 	float: left;
-	width: 34%;
+	width: 29%;
 	// width: 140px;
 
 	@include phones {
@@ -75,10 +75,6 @@
     @include laptop {
 		display: block;
 	}
-
-	@include phones {
-		top: 1px;
-	}
 }
 
 .nav__trigger-link {
@@ -95,7 +91,7 @@
 
 .nav__list {
 	float: left;
-	width: 61%;
+	width: 70%;
 	font-size: 0;
 	text-align: justify;
 	line-height: 0;
@@ -226,7 +222,7 @@
 
 .header__user {
 	float: right;
-	width: 22%;
+	width: 18%;
 }
 
 .user {
@@ -261,6 +257,10 @@
 
 	&:hover {
 		color: $yellow;
+	}
+
+	@include phones {
+	    margin-top: 28px;
 	}
 }
 

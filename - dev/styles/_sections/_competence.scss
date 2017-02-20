@@ -166,8 +166,6 @@
 
 .tasks__item {
 	margin-bottom: 33px;
-
-
 }
 
 .tasks__item-desc {
@@ -266,6 +264,10 @@
 		@include inline-block(middle);
 		height: 100%;
 		width: 0;
+	}
+
+	@include phones {
+		text-align: center;
 	}
 }
 

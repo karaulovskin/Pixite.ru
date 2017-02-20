@@ -1,11 +1,10 @@
 .inner {
-	padding-top: 54px;
-	padding-bottom: 54px;
+	padding-top: 27px;
+	padding-bottom: 70px;
 	background: #fff;
 
 	@include phones {
 		padding-top: 30px;
-	    padding-bottom: 5px;
 	}
 }
 
