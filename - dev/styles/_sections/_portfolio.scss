@@ -133,6 +133,23 @@
 			margin-top: 0;
 			margin-left: 0;
 		}
+
+		.work__img-desc {
+			opacity: 0;
+		}
+
+		.work__desc {
+
+			&:after {
+				width: 80%;
+				opacity: 1;
+			}
+		}
+
+		.work__desc-top,
+		.work__desc-bottom {
+			opacity: 1;
+		}
 	}
 }
 
@@ -194,6 +211,7 @@
 	font-size: 11px;
 	color: #fff;
 	background: rgba(6, 20, 28, .5);
+	@include transition(.8s);
 
 	@include tablets {
 		width: 100%;
@@ -209,8 +227,8 @@
     width: 0;
     height: 0;
     border: 1000px solid transparent;	
-    border-left: 1000px solid rgba(6, 20, 28, .7);
-    border-top: 1000px solid rgba(6, 20, 28, .7);
+    border-left: 1000px solid rgba(6, 20, 28, .9);
+    border-top: 1000px solid rgba(6, 20, 28, .9);
     @include transition(1s);
 }
 
@@ -324,6 +342,57 @@
 	font-size: 0;
 }
 
+.work__desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		width: 45%;
+		height: 1px;
+		margin: auto;
+		background: #fff;
+		opacity: 0;
+		@include transition(.4s);
+	}
+}
+
+.work__desc-top {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	text-transform: uppercase;
+	font-size: 16px;
+	opacity: 0;
+	@include transition(.5s);
+}
+
+.work__desc-bottom {
+	position: absolute;
+	top: 53%;
+	left: 10%; 
+	font-size: 11px;
+	opacity: 0;
+	@include transition(.5s);
+}
+
+.work__link--big .work__desc .work__desc-top {
+	top: 42%;
+	font-size: 21px;
+}
+
+.work__link--big .work__desc .work__desc-bottom {
+	font-size: 13px;
+}
+
 
 
 /* ------------------------- PORTFOLIO-BODY-------------------------- */
@@ -419,6 +488,10 @@
 	position: fixed;
     top: 97px;
     right: 104px;
+
+    @include phones {
+    	display: none;
+    }
 }
 
 .back__link {
@@ -472,6 +545,10 @@
 		height: 8vw;
 		background: #fff;
 	}
+
+	@include desktop {
+		height: 1000px;
+	}
 }
 
 .header-inner__title-left,
@@ -479,6 +556,20 @@
 	float: left;
 	width: 50%;
     padding-right: 12px;
+
+    @include tablets {
+    	float: none;
+    	width: 100%;
+    	padding-right: 0;
+    }
+}
+
+.header-inner__title-right {
+    padding: 0 0 0 12px;
+
+    @include tablets {
+    	padding: 0;
+    }
 }
 
 .portfolio__item {
@@ -512,30 +603,34 @@
 	width: 1100px;
 	width: 81.5%;
 	height: 634px;
-	padding: 41px 196px 142px 185px;
 	margin: 0 auto;
 	background: url(../img/decor/MacBook.png) no-repeat;
 	background-size: contain;
 	z-index: 11;
+
+	@include phones {
+		width: 100%;
+	}
 }
 
 .portfolio-inner {
 	padding-bottom: 40px;
 }
 
-// .slider {
-// 	position: absolute;
-// 	top: 0;
-// 	right: 0;
-// 	left: 0;
-// 	margin-top: -360px;
-// 	margin-left: 225px;
-// 	width: 720px;
-// 	height: 450px;
-// }
-
 .slider {
+	position: absolute;
+	top: 3vw;
+	right: 1%;
+	left: 0;
 	width: 720px;
+	width: 65.49%;
+	height: 450px;
+	height: 33.2vw;
+	margin: auto;
+
+	@include phones {
+		height: 40vw;
+	}
 }
 
 .slider__item {
@@ -549,10 +644,16 @@
 
 .slider__img {
 	width: 720px;
-    height: 450px;
+	width: 52.7vw;
+    height: 33.2vw;
 	background-size: cover;
 	background-repeat: no-repeat;
     background-position: center top;
+
+    @include phones {
+    	width: 63vw;
+		height: 40vw;
+	}
 }
 
 .slider__img-pic {
@@ -565,12 +666,16 @@
     box-shadow: none!important;
     border: none!important;
     left: 0!important;
+    height: 33.2vw!important;
     background: #fff;
-    height: 450px!important;
+
+    @include phones {
+		height: 40vw!important;
+	}
 }
 
 .bx-wrapper .bx-pager {
-	bottom: -140px!important;
+	bottom: -9vw!important;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
